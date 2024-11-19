@@ -3,12 +3,7 @@
 @tailwind utilities;
 
 @layer base{
-    @font-face {
-        font-family: 'Circular STD';
-        src: url('../public/assets/font/CircularStd/CircularStd-Bold.woff') format('woff');
-    }
-
     html{
-        font-family: 'Poppins', sans-serif;
+        font-family: 'poppins', sans-serif;
     }
 }

@@ -27,11 +27,11 @@
                 <img src="../public/assets/icons/toggle.svg" alt="" @click="navopen = !navopen" class="order-2 sm:order-1 lg:hidden">
                 <div class="order-2 hidden lg:block">
                     <ul class="flex gap-16">
-                        <li class="p-5 hover:bg-slate-300 hover:text-voksel-blue">
-                            <a href="#" class="">Home</a>
-                        </li>
                         <li class="p-5 border-b-2 border-b-voksel-dark">
-                            <a href="#" class="text-voksel-dark font-bold">About Us</a>
+                            <a href="#" class="text-voksel-dark font-bold">Home</a>
+                        </li>
+                        <li class="p-5 hover:bg-slate-300 hover:text-voksel-blue">
+                            <a href="#" class="">About Us</a>
                         </li>
                         <li class="p-5 hover:bg-slate-300 hover:text-voksel-blue">
                             <a href="#" class="">Our Products</a>
@@ -128,7 +128,7 @@
                     </div>
                     <!-- Deskripsi -->
                     <div class="w-[50%] md:w-[50%] lg:w-[40%]" data-aos="fade-up">
-                        <span class="text-white text-[10px] line-height-[5px] md:text-lg lg:text-xl font-reguler py-2 md:py-8 lg:py-10">
+                        <span class="text-sm sm:text-base md:text-lg lg:text-xl font-extralight py-4 md:py-8 lg:py-10 text-white">
                             Imperdiet sodales quis eget eu libero quam non feugiat. Duis faucibus id quisque nunc nulla aliquet feugiat. Vel quis facilisis ac morbi urna.
                         </span>
                         <div class="py-4 md:py-8 lg:py-10">
@@ -157,7 +157,7 @@
                         </h1>
                     </div>
                     <div class="w-[50%] md:w-[50%] lg:w-[40%]" data-aos="fade-up">
-                        <span class="text-white text-[10px] line-height-[5px] md:text-lg lg:text-xl font-reguler py-2 md:py-8 lg:py-10">
+                        <span class="text-sm sm:text-base md:text-lg lg:text-xl font-extralight py-4 md:py-8 lg:py-10 text-white">
                             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
                         </span>
                         <div class="py-4 md:py-8 lg:py-10">
@@ -184,7 +184,7 @@
                         </h1>
                     </div>
                     <div class="w-[50%] md:w-[50%] lg:w-[40%]" data-aos="fade-up">
-                        <span class="text-white text-[10px] line-height-[5px] md:text-lg lg:text-xl font-reguler py-2 md:py-8 lg:py-10">
+                        <span class="text-sm sm:text-base md:text-lg lg:text-xl font-extralight py-4 md:py-8 lg:py-10 text-white">
                             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </span>
                         <div class="py-4 md:py-8 lg:py-10">
@@ -210,7 +210,7 @@
                         </h1>
                     </div>
                     <div class="w-[50%] md:w-[50%] lg:w-[40%]" data-aos="fade-up">
-                        <span class="text-white text-[10px] line-height-[5px] md:text-lg lg:text-xl font-reguler py-2 md:py-8 lg:py-10">
+                        <span class="text-sm sm:text-base md:text-lg lg:text-xl font-extralight py-4 md:py-8 lg:py-10 text-white">
                             Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris.
                         </span>
                         <div class="py-4 md:py-8 lg:py-10">
@@ -255,55 +255,125 @@
                 </div>
             </div>
         </div>
-    </section>
-                
+    </section>          
 
     <!-- Our Product -->
-    <!-- <section>
-        <div class="container mx-auto p-4 py-24 text-center">
-            <div class="grid grid-cols-12">
-                <div class="col-span-12 lg:col-span-8">
-                    <button class="bg-voksel-blue bg-opacity-15 px-2 py-1 text-black">Our Product</button>
-                    <h1 class="text-4xl font-bold py-4">Quality Cable Solutions for Every Need</h1>
+    <section>
+        <div class="container mx-auto p-4 md:py-12 text-center">
+            <div class="grid grid-cols-12 gap-6">
+                <!-- Judul dan Deskripsi -->
+                <div class="col-span-12 lg:col-span-12 mx-auto">
+                    <button class="bg-voksel-blue bg-opacity-15 px-4 py-2 text-black rounded-md text-sm md:text-base">
+                        Our Product
+                    </button>
+                    <h1 class="text-2xl md:text-4xl font-bold py-4">
+                        Quality Cable Solutions for Every Need
+                    </h1>
                 </div>
-                <div class="col-span-12 lg:col-span-4 p-4">
-                    <div class="relative bg-gradient-to-b from-white to-[#0E7DC1] rounded-lg shadow-md p-6">
-                        <div class="absolute bottom-0 left-0 w-full h-[260px] bg-white z-10 skew-y-[5deg]"></div>
-                        <img src="../public/assets/img/our-product-1.png" alt="" class="mb-4">
-                        <div class="mt-4 relative z-10">
-                            <h2 class="text-2xl font-bold mb-2">High Performance Cables</h2>
-                            <p class="text-gray-600">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            <button class="bg-voksel-blue text-white px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 rounded-md text-xs sm:text-sm md:text-base">
-                                Learn More
-                            </button>
+    
+                <!-- Card 1 -->
+                <div class="col-span-12 md:col-span-6 lg:col-span-4 p-4">
+                    <div class="w-full md:w-3/4 lg:w-full mx-auto">
+                        <div class="relative rounded-lg shadow-md p-6 bg-white">
+                            <!-- Background image -->
+                            <div class="absolute top-0 left-0 w-full h-5">
+                                <img src="../public/assets/img/bg-our-product.png" alt="Background" class="w-full object-cover rounded-lg">
+                            </div>
+                            
+                            <!-- Skewed white background -->
+                            <div class="absolute bottom-[54px] left-0 w-full h-[180px] bg-white z-10 skew-y-[5deg]"></div>
+                            
+                            <!-- Product image -->
+                            <div class="relative z-5">
+                                <img src="../public/assets/img/our-product-1.png" alt="Building Wire" class="mx-auto w-full h-auto">
+                            </div>
+                            
+                            <!-- Content -->
+                            <div class="mt-8 text-left relative z-20">
+                                <h2 class="text-lg md:text-xl lg:text-2xl font-bold py-3">High Performance Cable</h2>
+                                <p class="text-gray-600 text-sm md:text-base py-3">
+                                    Metus volupat morbi lorem etiam. Integer eu dictum virerra donec id ut donec arcu sed.
+                                </p>
+                                <a class="text-voksel-blue rounded-md text-sm md:text-base py-3">
+                                    Read More
+                                </a>
+                            </div>
                         </div>
-                    </div>                                                                            
+                    </div>
+                </div>                
+    
+                <!-- Card 2 -->
+                <div class="col-span-12 md:col-span-6 lg:col-span-4 p-4">
+                    <div class="w-full md:w-3/4 lg:w-full mx-auto">
+                        <div class="relative rounded-lg shadow-md p-6 bg-white">
+                            <!-- Background image -->
+                            <div class="absolute top-0 left-0 w-full h-5">
+                                <img src="../public/assets/img/bg-our-product.png" alt="Background" class="w-full object-cover rounded-lg">
+                            </div>
+                            
+                            <!-- Skewed white background -->
+                            <div class="absolute bottom-[54px] left-0 w-full h-[180px] bg-white z-10 skew-y-[5deg]"></div>
+                            
+                            <!-- Product image -->
+                            <div class="relative z-5">
+                                <img src="../public/assets/img/our-product-1.png" alt="Building Wire" class="mx-auto w-full h-auto">
+                            </div>
+                            
+                            <!-- Content -->
+                            <div class="mt-8 text-left relative z-20">
+                                <h2 class="text-lg md:text-xl lg:text-2xl font-bold py-3">Power Cable</h2>
+                                <p class="text-gray-600 text-sm md:text-base py-3">
+                                    Metus volupat morbi lorem etiam. Integer eu dictum virerra donec id ut donec arcu sed.
+                                </p>
+                                <a class="text-voksel-blue rounded-md text-sm md:text-base py-3">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-span-12 lg:col-span-4 p-4">
-                    <div class="relative bg-gradient-to-b from-white to-[#0E7DC1] rounded-lg shadow-md p-6">
-                        <div class="absolute bottom-0 left-0 w-full h-[260px] bg-white z-10 skew-y-[5deg]"></div>
-                        <img src="../public/assets/img/our-product-1.png" alt="" class="mb-4">
-                        <div class="mt-4 relative z-10">
-                            <h2 class="text-2xl font-bold mb-2">High Performance Cables</h2>
-                            <p class="text-gray-600">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            <button class="bg-voksel-blue text-white px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 rounded-md text-xs sm:text-sm md:text-base">
-                                Learn More
-                            </button>
+    
+                <!-- Card 3 -->
+                <div class="col-span-12 md:col-span-6 lg:col-span-4 p-4">
+                    <div class="w-full md:w-3/4 lg:w-full mx-auto">
+                        <div class="relative rounded-lg shadow-md p-6 bg-white">
+                            <!-- Background image -->
+                            <div class="absolute top-0 left-0 w-full h-5">
+                                <img src="../public/assets/img/bg-our-product.png" alt="Background" class="w-full object-cover rounded-lg">
+                            </div>
+                            
+                            <!-- Skewed white background -->
+                            <div class="absolute bottom-[54px] left-0 w-full h-[180px] bg-white z-10 skew-y-[5deg]"></div>
+                            
+                            <!-- Product image -->
+                            <div class="relative z-5">
+                                <img src="../public/assets/img/our-product-1.png" alt="Building Wire" class="mx-auto w-full h-auto">
+                            </div>
+                            
+                            <!-- Content -->
+                            <div class="mt-8 text-left relative z-20">
+                                <h2 class="text-lg md:text-xl lg:text-2xl font-bold py-3">Telecomunication Cable</h2>
+                                <p class="text-gray-600 text-sm md:text-base py-3">
+                                    Metus volupat morbi lorem etiam. Integer eu dictum virerra donec id ut donec arcu sed.
+                                </p>
+                                <a class="text-voksel-blue rounded-md text-sm md:text-base py-3">
+                                    Read More
+                                </a>
+                            </div>
                         </div>
-                    </div>                                                                            
+                    </div>
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <!-- Hot Product -->
     <section class="relative">
         <!-- Gambar Latar Belakang -->
         <img src="../public/assets/img/bg-hot-product.png" alt="" class="absolute inset-0 w-full h-full object-cover z-0" />
-    
         <div class="container mx-auto p-4 py-20 relative z-10 flex items-center justify-center">
             <div class="grid grid-cols-12 w-full">
-                <div class="col-span-12 lg:col-span-6 flex items-center">
+                <div class="col-span-12 lg:col-span-6 flex items-center text-right lg:text-left">
                     <div class="grid-cols-12">
                         <button class="bg-voksel-blue bg-opacity-15 px-2 py-1 text-black font-medium rounded-xl">HOT PRODUCT</button>
                         <h1 class="col-span-12 text-4xl font-bold py-4">Innovative Solutions for a Brighter Tomorrow</h1>
@@ -326,89 +396,234 @@
         </div>
     </section>
 
+    <!-- New Product -->
+    <section class="relative">
+        <img src="../public/assets/img/bg-new-product.png" alt="" class="absolute inset-0 w-full h-full object-cover z-0" />
+        <div class="container mx-auto p-4 py-20 relative z-10 flex items-center justify-center">
+            <div class="grid grid-cols-12 gap-6">
+                <!-- Judul dan Deskripsi -->
+                <div class="col-span-12 lg:col-span-12 mx-auto">
+                    <button class="bg-voksel-blue bg-opacity-15 px-4 py-2 text-black rounded-md text-sm md:text-base">
+                        Our Product
+                    </button>
+                    <h1 class="text-2xl md:text-4xl font-bold py-4">
+                        Quality Cable Solutions for Every Need
+                    </h1>
+                </div>
+    
+                <!-- Card 1 -->
+                <div class="col-span-12 md:col-span-6 lg:col-span-4 p-4">
+                    <div class="w-full md:w-3/4 lg:w-full mx-auto">
+                        <div class="relative rounded-lg shadow-md p-6 bg-white">
+                            <!-- Background image -->
+                            <div class="absolute top-0 left-0 w-full h-5">
+                                <img src="../public/assets/img/bg-our-product.png" alt="Background" class="w-full object-cover rounded-lg">
+                            </div>
+                            
+                            <!-- Skewed white background -->
+                            <div class="absolute bottom-[54px] left-0 w-full h-[180px] bg-white z-10 skew-y-[5deg]"></div>
+                            
+                            <!-- Product image -->
+                            <div class="relative z-5">
+                                <img src="../public/assets/img/our-product-1.png" alt="Building Wire" class="mx-auto w-full h-auto">
+                            </div>
+                            
+                            <!-- Content -->
+                            <div class="mt-8 text-left relative z-20">
+                                <h2 class="text-lg md:text-xl lg:text-2xl font-bold py-3">High Performance Cable</h2>
+                                <p class="text-gray-600 text-sm md:text-base py-3">
+                                    Metus volupat morbi lorem etiam. Integer eu dictum virerra donec id ut donec arcu sed.
+                                </p>
+                                <a class="text-voksel-blue rounded-md text-sm md:text-base py-3">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+    
+                <!-- Card 2 -->
+                <div class="col-span-12 md:col-span-6 lg:col-span-4 p-4">
+                    <div class="w-full md:w-3/4 lg:w-full mx-auto">
+                        <div class="relative rounded-lg shadow-md p-6 bg-white">
+                            <!-- Background image -->
+                            <div class="absolute top-0 left-0 w-full h-5">
+                                <img src="../public/assets/img/bg-our-product.png" alt="Background" class="w-full object-cover rounded-lg">
+                            </div>
+                            
+                            <!-- Skewed white background -->
+                            <div class="absolute bottom-[54px] left-0 w-full h-[180px] bg-white z-10 skew-y-[5deg]"></div>
+                            
+                            <!-- Product image -->
+                            <div class="relative z-5">
+                                <img src="../public/assets/img/our-product-1.png" alt="Building Wire" class="mx-auto w-full h-auto">
+                            </div>
+                            
+                            <!-- Content -->
+                            <div class="mt-8 text-left relative z-20">
+                                <h2 class="text-lg md:text-xl lg:text-2xl font-bold py-3">Power Cable</h2>
+                                <p class="text-gray-600 text-sm md:text-base py-3">
+                                    Metus volupat morbi lorem etiam. Integer eu dictum virerra donec id ut donec arcu sed.
+                                </p>
+                                <a class="text-voksel-blue rounded-md text-sm md:text-base py-3">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-span-12 md:col-span-6 lg:col-span-4 p-4">
+                    <div class="w-full md:w-3/4 lg:w-full mx-auto">
+                        <div class="relative rounded-lg shadow-md p-6 bg-white">
+                            <!-- Background image -->
+                            <div class="absolute top-0 left-0 w-full h-5">
+                                <img src="../public/assets/img/bg-our-product.png" alt="Background" class="w-full object-cover rounded-lg">
+                            </div>
+                            
+                            <!-- Skewed white background -->
+                            <div class="absolute bottom-[54px] left-0 w-full h-[180px] bg-white z-10 skew-y-[5deg]"></div>
+                            
+                            <!-- Product image -->
+                            <div class="relative z-5">
+                                <img src="../public/assets/img/our-product-1.png" alt="Building Wire" class="mx-auto w-full h-auto">
+                            </div>
+                            
+                            <!-- Content -->
+                            <div class="mt-8 text-left relative z-20">
+                                <h2 class="text-lg md:text-xl lg:text-2xl font-bold py-3">Telecomunication Cable</h2>
+                                <p class="text-gray-600 text-sm md:text-base py-3">
+                                    Metus volupat morbi lorem etiam. Integer eu dictum virerra donec id ut donec arcu sed.
+                                </p>
+                                <a class="text-voksel-blue rounded-md text-sm md:text-base py-3">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="relative">
         <!-- Gambar Latar Belakang -->
         <img src="../public/assets/img/bg-footer.png" alt="" class="absolute inset-0 w-full h-full object-cover z-0" />
         
-        <div class="container mx-auto text-center py-[40px] flex items-center justify-center relative z-10">
-            <div class="grid grid-cols-12 w-full text-white">
-                <div class="col-span-12 lg:col-span-3">
+        <div class="container mx-auto px-5 lg:px-0 text-center py-[40px] flex items-center justify-center relative z-10">
+            <div class="grid grid-cols-12 gap-y-8 lg:gap-y-0 w-full text-white">
+                <!-- Executive Office -->
+                <div class="col-span-12 md:col-span-4 lg:col-span-3 px-4 md:px-0 md:pe-14">
                     <div class="text-left">
-                        <img src="../public/assets/logo/logo-white.png" class="text-center" alt="">
-                        <h1 class="col-span-12 text-lg font-semibold py-3">Executive Office</h1>
-                        <span class="font-reguler text-sm">
-                            Menara Karya 3rd Floor, 
-                            Suite D Jl. HR. Rasuna Said Block X-5; Kav. 1-2,
-                            Jakarta 12950 - Indonesia
+                        <img src="../public/assets/logo/logo-white.png" alt="">
+                        <h1 class="text-lg font-semibold py-3">Executive Office</h1>
+                        <span class="text-sm font-extralight block">
+                            Menara Karya 3rd Floor, Suite D Jl. HR. Rasuna Said Block X-5; Kav. 1-2, Jakarta 12950 - Indonesia
                         </span>
-                        <h1 class="col-span-12 text-lg font-semibold py-3">Phone</h1>
-                        <span class="font-reguler text-sm">
-                            +62 21 2222 3333
-                        </span>
-                        <img class="py-4" src="../public/assets/logo/iso-logo.png" alt="">
                     </div>
+                </div>
+        
+                <!-- About -->
+                <div class="col-span-6 md:col-span-4 lg:col-span-3 px-4 md:px-0 text-left">
+                    <div class="grid grid-cols-12">
+                        <div class="col-span-12">
+                            <h1 class="text-lg font-semibold py-3">About Us</h1>
+                            <ul>
+                                <li class="leading-7 text-sm font-extralight"><a href="#">Company Profile</a></li>
+                                <li class="leading-7 text-sm font-extralight"><a href="#">Our Boards Profile</a></li>
+                                <li class="leading-7 text-sm font-extralight"><a href="#">Our Structure</a></li>
+                                <li class="leading-7 text-sm font-extralight"><a href="#">Factory & Cable Gallery</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Our Product -->
+                <div class="col-span-6 md:col-span-4 lg:col-span-3 px-4 md:px-0 text-left">
+                    <div class="grid grid-cols-12">
+                        <div class="col-span-12">
+                            <h1 class="text-lg font-semibold py-3">Our Product</h1>
+                            <ul>
+                                <li class="leading-7 text-sm font-extralight"><a href="#">Product Catalogue</a></li>
+                                <li class="leading-7 text-sm font-extralight"><a href="#">High Performance Cable</a></li>
+                                <li class="leading-7 text-sm font-extralight"><a href="#">Power Cable</a></li>
+                                <li class="leading-7 text-sm font-extralight"><a href="#">Telecommunication Cable</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Investor Relation -->
+                <div class="col-span-6 md:col-span-4 lg:col-span-3 px-4 md:px-0 text-left">
+                    <h1 class="text-lg font-semibold py-3">Investor Relation</h1>
+                    <ul>
+                        <li class="leading-7 text-sm font-extralight"><a href="#">Business & Financial Reports</a></li>
+                        <li class="leading-7 text-sm font-extralight"><a href="#">Sustainability & Credibility</a></li>
+                        <li class="leading-7 text-sm font-extralight"><a href="#">Shareholder Communication</a></li>
+                        <li class="leading-7 text-sm font-extralight"><a href="#">Bonds & Prospektus</a></li>
+                        <li class="leading-7 text-sm font-extralight"><a href="#">Shares Listing & Information Disclosure</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-span-6 md:col-span-4 lg:col-span-3 px-4 md:px-0 text-left">
+                    <div class="grid grid-cols-12">
+                        <div class="col-span-12">
+                            <h1 class="text-lg font-semibold py-3">Phone</h1>
+                            <ul>
+                                <li class="leading-7 text-sm font-extralight"><a href="#">+62 21 5794 4622</a></li>
+                            </ul>
+                            <img src="../public/assets/logo/iso-logo.png" alt="" class="py-7">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-span-6 md:col-span-4 lg:col-span-3 px-4 md:px-0 text-left">
+                    <div class="grid grid-cols-12">
+                        <div class="col-span-12">
+                            <h1 class="text-lg font-semibold py-3">GCG</h1>
+                            <ul>
+                                <li class="leading-7 text-sm font-extralight"><a href="#">Boards & Committee Characters</a></li>
+                                <li class="leading-7 text-sm font-extralight"><a href="#">Corporate Secretary</a></li>
+                                <li class="leading-7 text-sm font-extralight"><a href="#">Corporate Ethnics & Policy</a></li>
+                                <li class="leading-7 text-sm font-extralight"><a href="#">Internal Oversight</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-span-6 md:col-span-4 lg:col-span-3 px-4 md:px-0 text-left">
+                    <div class="grid grid-cols-12">
+                        <div class="col-span-12">
+                            <h1 class="text-lg font-semibold py-3">CSR & News</h1>
+                            <ul>
+                                <li class="leading-7 text-sm font-extralight"><a href="#">Corporate Social Reponsibility</a></li>
+                                <li class="leading-7 text-sm font-extralight"><a href="#">News Update</a></li>
+                                <li class="leading-7 text-sm font-extralight"><a href="#">Job Vacancies</a></li>
+                                <li class="leading-7 text-sm font-extralight"><a href="#">Event</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- News -->
+                <div class="col-span-6 md:col-span-4 lg:col-span-3 px-4 md:px-0 text-left">
+                    <h1 class="text-lg font-semibold py-3">Contact Us</h1>
+                    <ul>
+                        <li class="leading-7 text-sm font-extralight"><a href="#">Office & Factory</a></li>
+                        <li class="leading-7 text-sm font-extralight"><a href="#">Order Product</a></li>
+                        <li class="leading-7 text-sm font-extralight"><a href="#">Get In Touch With Our Sales Team</a></li>
+                    </ul>
                 </div>  
-                <div class="col-span-12 lg:col-span-2 text-left">
-                    <h1 class="col-span-12 text-lg font-semibold py-3">About</h1>
-                    <ul>
-                        <li class="leading-7 text-sm font-reguler"><a href="#">Company Profile</a></li>
-                        <li class="leading-7 text-sm font-reguler"><a href="#">Boards</a></li>
-                        <li class="leading-7 text-sm font-reguler"><a href="#">Structure</a></li>
-                    </ul>
-                    <h1 class="col-span-12 text-lg font-semibold py-3">Plant</h1>
-                    <ul>
-                        <li class="leading-7 text-sm font-reguler"><a href="#">Cileungsi Factory</a></li>
-                        <li class="leading-7 text-sm font-reguler"><a href="#">Cable</a></li>
-                        <li class="leading-7 text-sm font-reguler"><a href="#">Structure</a></li>
-                    </ul>
-                </div>
-                <div class="col-span-12 lg:col-span-3 text-left">
-                    <h1 class="col-span-12 text-lg font-semibold py-3">Our Product</h1>
-                    <ul>
-                        <li class="leading-7 text-sm font-reguler"><a href="#">Product Catalogue</a></li>
-                        <li class="leading-7 text-sm font-reguler"><a href="#">High Performance Cable</a></li>
-                        <li class="leading-7 text-sm font-reguler"><a href="#">Power Cable</a></li>
-                        <li class="leading-7 text-sm font-reguler"><a href="#">Telecommunication Cable</a></li>
-                    </ul>
-                    <h1 class="col-span-12 text-lg font-semibold py-3">Contact Us</h1>
-                    <ul>
-                        <li class="leading-7 text-sm font-reguler"><a href="#">Office & Factory</a></li>
-                        <li class="leading-7 text-sm font-reguler"><a href="#">Order Product</a></li>
-                        <li class="leading-7 text-sm font-reguler"><a href="#">Get in Touch with Our Sales Team</a></li>
-                    </ul>
-                </div>
-                <div class="col-span-12 lg:col-span-2 text-left">
-                    <h1 class="col-span-12 text-lg font-semibold py-3">Investor Relation</h1>
-                    <ul>
-                        <li class="leading-7 text-sm font-reguler"><a href="#">Business Highlights</a></li>
-                        <li class="leading-7 text-sm font-reguler"><a href="#">Financial Report</a></li>
-                        <li class="leading-7 text-sm font-reguler"><a href="#">Annual Report</a></li>
-                        <li class="leading-7 text-sm font-reguler"><a href="#">Sustainability Report</a></li>
-                        <li class="leading-7 text-sm font-reguler"><a href="#">GMS</a></li>
-                        <li class="leading-7 text-sm font-reguler"><a href="#">Public Expose</a></li>
-                        <li class="leading-7 text-sm font-reguler"><a href="#">Bonds</a></li>
-                        <li class="leading-7 text-sm font-reguler"><a href="#">Prospektus</a></li>
-                        <li class="leading-7 text-sm font-reguler"><a href="#">Shares Listing Chronology</a></li>
-                        <li class="leading-7 text-sm font-reguler"><a href="#">Credibility</a></li>
-                        <li class="leading-7 text-sm font-reguler"><a href="#">Information Disclosure</a></li>
-                    </ul>
-                </div>
-                <div class="col-span-12 lg:col-span-2 text-left">
-                    <h1 class="col-span-12 text-lg font-semibold py-3">News</h1>
-                    <ul>
-                        <li class="leading-7 text-sm font-reguler"><a href="#">Cileungsi Factory</a></li>
-                        <li class="leading-7 text-sm font-reguler"><a href="#">Cable</a></li>
-                        <li class="leading-7 text-sm font-reguler"><a href="#">Structure</a></li>
-                    </ul>
-                </div>
-                <div class="col-span-12 pt-[40px]">
+        
+                <!-- Copyright -->
+                <div class="col-span-12 text-sm pt-[40px]">
                     <span>Copyright © 2024 PT Voksel Electric Tbk. All Rights Reserved.</span>
                 </div>
             </div>
         </div>
     </footer>
-    
 </body>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
