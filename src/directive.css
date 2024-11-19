@@ -6,4 +6,8 @@
     html{
         font-family: 'poppins', sans-serif;
     }
+
+    p{
+        line-height: 1.9rem;
+    }
 }
