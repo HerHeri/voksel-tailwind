@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tes Tailwind</title>
+    <!-- googleFont-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!-- Alpine Js -->
+    <script src="//unpkg.com/alpinejs" defer></script>
+
+    <!-- Tailwind Style -->
+    <link rel="stylesheet" href="../dist/tailwind.css">
+</head>
+<body>
+    <nav class="px-4 lg:px-[108px]" x-data="{ navopen: false }">
+        <div class="container mx-auto">
+            <div class="flex items-center justify-between">
+                <img src="../public/assets/logo/logo 1.svg" alt="" class="order-1 sm:order-2 lg:order-1">
+                <img src="../public/assets/icons/toggle.svg" alt="" @click="navopen = !navopen" class="order-2 sm:order-1 lg:hidden">
+                <div class="order-2 hidden lg:block">
+                    <ul class="flex gap-16">
+                        <li class="p-5 hover:bg-slate-300 hover:text-voksel-blue">
+                            <a href="#" class="">Home</a>
+                        </li>
+                        <li class="p-5 border-b-2 border-b-voksel-dark">
+                            <a href="#" class="text-voksel-dark font-bold">About Us</a>
+                        </li>
+                        <li class="p-5 hover:bg-slate-300 hover:text-voksel-blue">
+                            <a href="#" class="">Our Products</a>
+                        </li>
+                        <li class="p-5 hover:bg-slate-300 hover:text-voksel-blue">
+                            <a href="#" class="">Investor</a>
+                        </li>
+                        <li class="p-5 hover:bg-slate-300 hover:text-voksel-blue">
+                            <a href="#" class="">GCG</a>
+                        </li>
+                        <li class="p-5 hover:bg-slate-300 hover:text-voksel-blue">
+                            <a href="#" class="">CSR News</a>
+                        </li>
+                        <li class="p-5 hover:bg-slate-300 hover:text-voksel-blue">
+                            <a href="#" class="">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="order-3 hidden sm:block">
+                    <div class="bg-gray-300 px-1 py-1 rounded-xl flex gap-2">
+                        <button class="bg-voksel-dark text-white px-2 py-1 rounded-xl">ENG</button>
+                        <button class=" text-voksel-dark px-2 py-1 rounded-xl">IDN</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top-30 right-0 left-0 p-4 z-40" 
+            x-show="navopen"
+            x-transition:enter="transition ease-out duration-300"
+            x-transition:enter-start="opacity-0 scale-90"
+            x-transition:enter-end="opacity-100 scale-100"
+            x-transition:leave="transition ease-in duration-300"
+            x-transition:leave-start="opacity-100 scale-100"
+            x-transition:leave-end="opacity-0 scale-90">
+            <ul class="">
+                <li class="bg-voksel-blue rounded-md py-2 text-white">
+                    <a href="javascript:void(0)" class="flex justify-center">
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="py-2">
+                    <a href="javascript:void(0)" class="text-voksel-blue flex justify-center">
+                        <span>About Us</span>
+                    </a>
+                </li>
+                <li class="py-2">
+                    <a href="javascript:void(0)" class="text-voksel-blue flex justify-center">
+                        <span>Our Products</span>
+                    </a>
+                </li>
+                <li class="py-2">
+                    <a href="javascript:void(0)" class="text-voksel-blue flex justify-center">
+                        <span>Investor</span>
+                    </a>
+                </li>
+                <li class="py-2">
+                    <a href="javascript:void(0)" class="text-voksel-blue flex justify-center">
+                        <span>GCG</span>
+                    </a>
+                </li>
+                <li class="py-2">
+                    <a href="javascript:void(0)" class="text-voksel-blue flex justify-center">
+                        <span>CSR & News</span>
+                    </a>
+                </li>
+                <li class="py-2">
+                    <a href="javascript:void(0)" class="text-voksel-blue flex justify-center">
+                        <span>Contact Us</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="flex justify-center mt-4">
+                <div class="bg-gray-300 px-1 py-1 rounded-xl flex gap-2">
+                    <button class="bg-voksel-dark text-white px-2 py-1 rounded-xl">ENG</button>
+                    <button class=" text-voksel-dark px-2 py-1 rounded-xl">IDN</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section>
+        <div class="relative w-full">
+            <img src="../public/assets/img/Bg-Home-1.png" class="w-full h-auto" alt="">
+            <!-- Tambahkan container mx-auto -->
+            <div class="absolute inset-0 flex flex-col justify-center items-start space-y-4 container mx-auto">
+                <div class="w-[60%]">
+                    <h1 class="text-white font-bold text-xl sm:text-2xl md:text-4xl lg:text-7xl py-4 md:py-6 lg:py-10">
+                        Innovative Cable Solutions for a Brighter Future
+                    </h1>
+                </div>
+                <div class="w-[47%]">
+                    <span class="text-white text-sm sm:text-base md:text-lg lg:text-xl font-thin py-4 md:py-8 lg:py-10">
+                        Imperdiet sodales quis eget eu libero quam non feugiat. Duis faucibus id quisque nunc nulla aliquet feugiat. Vel quis facilisis ac morbi urna.
+                    </span>
+                    <div class="py-4 md:py-8 lg:py-10">
+                        <button class=" bg-white text-voksel-blue px-4 py-2 lg:px-6 lg:py-4 rounded-md text-xs sm:text-sm md:text-base">
+                            Pelajari Lebih Lanjut
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>   
+    
+    <!-- About Us -->
+    <section>
+        <div class="relative w-full">
+            <div class="grid grid-cols-2 grig-rows-4">
+                <img src="../public/assets/img/Bg-About-Us.png" class="w-full h-auto p-4 row-span-1" alt="">
+                <button class="bg-voksel-blue bg-opacity-15 px-2 py-1 text-black">About Us</button>
+                <h1>Innovative Solutions for a Brighter Tomorrow</h1>
+            </div>
+</body>
+</html>
