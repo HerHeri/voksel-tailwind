@@ -10,10 +10,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <!-- Alpine Js -->
-    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
 
     <!-- Slider -->
     <link href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
 
     <!-- Tailwind Style -->
     <link rel="stylesheet" href="../dist/tailwind.css">
@@ -121,260 +123,160 @@
     </nav>
 
     <!-- Hero Section -->
-    <section>
-        <div class="carousel relative w-full top-7 bottom-7 h-auto">
-            <!-- Slide 1 -->
-            <div id="slide1" class="carousel-item relative w-full top-5 bottom-9" data-aos="fade-up">
-                <img src="../public/assets/img/Bg-Home-1.png" class="w-full h-full" />
-                <!-- Konten Hero -->
-                <div class="absolute inset-0 flex flex-col justify-center items-start space-y-4 z-10 px-16 md:container md:mx-auto lg:container lg:mx-auto">
-                    <!-- Heading -->
-                    <div class="w-[50%] md:w-[60%] lg:w-[50%]">
-                        <h1 class="text-white font-bold text-sm md:text-4xl lg:text-6xl xl:text-7xl py-2 md:py-6 lg:py-10 leading-tight">
-                            Innovative Cable Solutions for a Brighter Future
-                        </h1>
-                    </div>
-                    <!-- Deskripsi -->
-                    <div class="w-[50%] md:w-[50%] lg:w-[40%]" data-aos="fade-up">
-                        <span class="text-sm sm:text-base md:text-lg lg:text-xl font-extralight py-4 md:py-8 lg:py-10 text-white">
-                            Imperdiet sodales quis eget eu libero quam non feugiat. Duis faucibus id quisque nunc nulla aliquet feugiat. Vel quis facilisis ac morbi urna.
-                        </span>
-                        <div class="py-4 md:py-8 lg:py-10">
-                            <button class="bg-white text-voksel-blue px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 rounded-md text-xs sm:text-sm md:text-base">
-                                Pelajari Lebih Lanjut
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Navigation Arrows -->
-                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between z-20">
-                    <a href="#slide4" class="btn btn-circle">❮</a>
-                    <a href="#slide2" class="btn btn-circle">❯</a>
-                </div>
-            </div>
-    
-            <!-- Slide 2 -->
-            <div id="slide2" class="carousel-item relative w-full top-5 bottom-9" data-aos="fade-up">
-                <img src="../public/assets/img/Bg-Home-1.png" class="w-full h-auto" />
-                <!-- Konten Hero -->
-                <div class="absolute inset-0 flex flex-col justify-center items-start space-y-4 z-10 px-16 md:container md:mx-auto lg:container lg:mx-auto">
-                    <!-- Heading -->
-                    <div class="w-[50%] md:w-[60%] lg:w-[50%]">
-                        <h1 class="text-white font-bold text-sm md:text-4xl lg:text-6xl xl:text-7xl py-2 md:py-6 lg:py-10 leading-tight">
-                            Innovative Cable Solutions for a Brighter Future
-                        </h1>
-                    </div>
-                    <div class="w-[50%] md:w-[50%] lg:w-[40%]" data-aos="fade-up">
-                        <span class="text-sm sm:text-base md:text-lg lg:text-xl font-extralight py-4 md:py-8 lg:py-10 text-white">
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
-                        </span>
-                        <div class="py-4 md:py-8 lg:py-10">
-                            <button class="bg-white text-voksel-blue px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 rounded-md text-xs sm:text-sm md:text-base">
-                                Explore More
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Navigation Arrows -->
-                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between z-20">
-                    <a href="#slide1" class="btn btn-circle">❮</a>
-                    <a href="#slide3" class="btn btn-circle">❯</a>
-                </div>
-            </div>
-    
-            <!-- Slide 3 -->
-            <div id="slide3" class="carousel-item relative w-full top-5 bottom-9" data-aos="fade-up">
-                <img src="../public/assets/img/Bg-Home-1.png" class="w-full h-auto" />
-                <div class="absolute inset-0 flex flex-col justify-center items-start space-y-4 z-10 px-16 md:container md:mx-auto lg:container lg:mx-auto">
-                    <div class="w-[50%] md:w-[60%] lg:w-[50%]">
-                        <h1 class="text-white font-bold text-sm md:text-4xl lg:text-6xl xl:text-7xl py-2 md:py-6 lg:py-10 leading-tight">
-                            Innovative Cable Solutions for a Brighter Future
-                        </h1>
-                    </div>
-                    <div class="w-[50%] md:w-[50%] lg:w-[40%]" data-aos="fade-up">
-                        <span class="text-sm sm:text-base md:text-lg lg:text-xl font-extralight py-4 md:py-8 lg:py-10 text-white">
-                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </span>
-                        <div class="py-4 md:py-8 lg:py-10">
-                            <button class="bg-white text-voksel-blue px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 rounded-md text-xs sm:text-sm md:text-base">
-                                Discover More
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between z-20">
-                    <a href="#slide2" class="btn btn-circle">❮</a>
-                    <a href="#slide4" class="btn btn-circle">❯</a>
-                </div>
-            </div>
-    
-            <!-- Slide 4 -->
-            <div id="slide4" class="carousel-item relative w-full top-5 bottom-9" data-aos="fade-up">
-                <img src="../public/assets/img/Bg-Home-1.png" class="w-full h-auto" />
-                <div class="absolute inset-0 flex flex-col justify-center items-start space-y-4 z-10 px-16 md:container md:mx-auto lg:container lg:mx-auto">
-                    <div class="w-[50%] md:w-[60%] lg:w-[50%]">
-                        <h1 class="text-white font-bold text-sm md:text-4xl lg:text-6xl xl:text-7xl py-2 md:py-6 lg:py-10 leading-tight">
-                            Innovative Cable Solutions for a Brighter Future
-                        </h1>
-                    </div>
-                    <div class="w-[50%] md:w-[50%] lg:w-[40%]" data-aos="fade-up">
-                        <span class="text-sm sm:text-base md:text-lg lg:text-xl font-extralight py-4 md:py-8 lg:py-10 text-white">
-                            Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris.
-                        </span>
-                        <div class="py-4 md:py-8 lg:py-10">
-                            <button class="bg-white text-voksel-blue px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 rounded-md text-xs sm:text-sm md:text-base">
-                                Learn More
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between z-20">
-                    <a href="#slide3" class="btn btn-circle">❮</a>
-                    <a href="#slide1" class="btn btn-circle">❯</a>
-                </div>
-            </div>
+    <section class="relative h-48 md:h-96 lg:h-96">
+        <img src="../public/assets/img/bg-header.png" class="w-full h-full" />
+        <!-- Konten Hero -->
+        <div class="absolute inset-0 flex flex-col justify-center items-center lg:items-start space-y-4 z-10 px-16 container mx-auto top-[63px]">
+            <!-- Heading -->
+            <h1 class="text-white font-bold text-3xl md:text-6xl lg:text-6xl xl:text-7xl py-2 md:py-6 lg:py-10 leading-tight">
+                About Us
+            </h1>
         </div>
     </section>
     
-    <!-- About Us -->
+    <!-- Company Profile -->
     <section class="relative">
-        <!-- Gambar Latar Belakang -->
-        <img src="../public/assets/img/bg-about-us.png" alt="Background" class="absolute inset-0 w-full h-full object-cover z-0" />
+        <img src="../public/assets/img/bg-about-company-profile.png" alt="Background" class="absolute inset-0 h-full object-cover z-0" />
         <div class="container max-w-full sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1400px] mx-auto py-20 relative flex items-center justify-center">
             <div class="grid grid-cols-12 w-full">
-                <!-- Gambar About Us (Hanya Muncul di Layar Besar) -->
-                <div class="col-span-12 lg:col-span-6 hidden lg:block">
-                    <div class="flex justify-left">
-                        <img src="../public/assets/img/img-about-us.png" class="w-[75%] h-auto" alt="About Us Image">
-                    </div>
+                <div class="col-span-12 lg:col-span-4">
+                    <h1 class="text-4xl md:text-4xl lg:text-5xl font-semibold py-4 md:py-6 lg:py-8 text-center md:text-center lg:text-left">
+                        Company <span class="block w-full h-[0.3rem] md:h-[0.6rem] lg:h-[1rem]"></span> Profile
+                    </h1>                                        
                 </div>
                 <!-- Konten About Us -->
-                <div class="col-span-12 lg:col-span-6 flex items-center">
-                    <div class="grid-cols-12">
-                        <button class="bg-voksel-blue bg-opacity-15 px-2 py-1 text-black mb-4">ABOUT US</button>
-                        <h1 class="col-span-12 text-2xl sm:text-3xl md:text-4xl font-bold py-4">
-                            Innovative Solutions for a Brighter Tomorrow
-                        </h1>
-                        <span class="block text-sm sm:text-base md:text-lg lg:text-xl font-extralight py-4 md:py-6 lg:py-8">
-                            Driving innovation that fuels a sustainable future, we deliver exceptional electrical cable solutions that meet the evolving needs of diverse industries across the globe.
-                        </span>
-                        <div class="py-4 md:py-6 lg:py-8">
-                            <button class="bg-voksel-blue text-white px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 rounded-md text-xs sm:text-sm md:text-base">
-                                Learn More
-                            </button>
-                        </div>
-                    </div>
+                <div class="col-span-12 lg:col-span-8 px-12 md:px-0 lg:px-0">
+                    <span class="block text-lg md:text-xl lg:text-xl font-medium md:font-medium lg:font-normal py-4 md:py-6 lg:py-8 !leading-9 text-center md:text-center lg:text-left">
+                        Established on April 19, 1971, PT Voksel Electric Tbk. (“the Company”) is engaged in cable industry. In 1989, the Company changed the status into a foreign capital investment through a joint venture agreement with Showa Electric Wire & Cable Co. Ltd. (“Showa”), a prominent cable company in Japan that has changed its name into SWCC Showa Cable Systems Co. Ltd. since 2006. In line with the rapid development of cable industry and more aggressive strategic growth, the Company held its initial public offering on the Jakarta Stock Exchange (now is the Indonesia Stock Exchange) and Surabaya Stock Exchange on December 20, 1990. With preservation and dedication from all the Company’s management and staff, the Company successfully positioning itself as one of the leading cable manufacturers in Indonesia. The Company’s core businesses include manufacturing of power, telecommunication, and fiber optic cables.
+                    </span>
+                    <span class="block text-lg md:text-xl lg:text-xl font-medium md:font-medium lg:font-normal py-4 md:py-6 lg:py-8 !leading-9 text-center md:text-center lg:text-left">
+                        Through its continuous pursuit for quality excellence, the Company was awarded numerous international quality certificates, such as ISO 9001:2015 from SGS Yarsley International Certification Services, Ltd. The Company is highly committed to prevent environmental pollution and enhance the safety and health in the working environment. In line with this commitment, the Company has obtained ISO 14001:2015 and ISO- 45001:2015. from SGS Yarsley International Certification Services, Ltd. The Company also obtained SMK3 certificate in 2018. Besides, the Company obtained KEMA Certificate from KEMA Nederland B.V. and TUV certificates. At the beginning of 2016, the Company participated in development and research related to new products that will be launched in the following years. The company is also expanding by adding business lines for high voltage. In 2020, the Company began to expand capacity and production area for this product, and in 2023, a 42.97% stake was taken over by Hengtong Optic-Electric International Co., Ltd.
+                    </span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Our Product -->
+    <!-- Company Profile 2 -->
+    <section class="relative h-[900px]">
+        <img src="../public/assets/img/bg-about-company-profile-2.png" alt="Background" class="absolute inset-0 w-full h-full object-cover z-0" />
+        <div class="container max-w-full sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1400px] mx-auto h-full flex items-center justify-center relative z-10">
+            <div class="grid grid-cols-12 w-full">
+                <div class="col-span-12 lg:col-span-6 px-12 md:px-0 lg:px-0">
+                    <span class="block text-white text-lg md:text-xl lg:text-xl font-medium md:font-medium lg:font-normal py-4 md:py-6 lg:py-8 !leading-9 text-center md:text-center lg:text-left">
+                        The Company markets its products both domestically and internationally. For domestic market, majority sales stems from PT Perusahaan Listrik Negara ("PLN') and PT Telekomunikasi Indonesia Tbk ("Telkom'). In addition, the Company also supplies free market cables to contractors and distributors.
+                    </span>
+                    <span class="block text-white text-lg md:text-xl lg:text-xl font-medium md:font-medium lg:font-normal py-4 md:py-6 lg:py-8 !leading-9 text-center md:text-center lg:text-left">
+                        For export sales, the Company markets to various countries such as: Singapore, Malaysia, Timor Leste, Philippines, Thailand, Vietnam, Cambodia, Myanmar, Nepal, Bhutan, India, Sri Lanka, Bangladesh, Pakistan, Afganistan, UAE, Yemen, Saudi Arabia, Qatar, Lebanon, Iraq, Jordan, Egypt, Japan, South of Korea, Australia, Panama, Brazil, Kenya, Tanzania, DR of Congo, Rep of Congo, Nigeria, Ethiopia, Mozambique, Uganda, Eritrea, Malta, Mauritius, Cyprus, Seychelles, Liberia, Haiti, Suriname, Palestina, Hong Kong, Taiwan, China, Samoa, Chile, Ecuador, Brunei, Gabon, Ghana, Angola, Ivorycoast, Burundi, Rwanda, Madagascar.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Complete List (kurang responsive) -->
     <section class="relative">
-        <div class="container max-w-full sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1400px] mx-auto py-12 text-center">
-            <div class="grid grid-cols-12 gap-6">
+        <div class="container max-w-full sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1400px] mx-auto py-12 text-left">
+            <div class="grid grid-cols-12 gap-6" x-data="{ openTab: 1 }">
                 <!-- Judul dan Deskripsi -->
-                <div class="col-span-12 mx-auto">
-                    <button class="bg-voksel-blue bg-opacity-15 px-4 py-2 text-black rounded-full text-sm md:text-base">
-                        OUR PRODUCT
-                    </button>
-                    <h1 class="text-2xl md:text-4xl font-bold py-4">
-                        Quality Cable Solutions for Every Need
-                    </h1>
+                <div class="col-span-12 lg:col-span-5 px-7">
+                    <h1 class="text-4xl md:text-4xl lg:text-5xl font-semibold py-4 md:py-6 lg:py-8">
+                        Complete List of Our <span class="block w-full h-[0.3rem] md:h-[0.6rem] lg:h-[1rem]"></span> Cable Line Up
+                    </h1>  
                 </div>
-                
-                <!-- Card 1 -->
-                <div class="col-span-12 md:col-span-12 lg:col-span-4 p-4">
-                    <div class="mx-auto w-[75%] md:w-[50%] lg:w-full">
-                        <div class="relative rounded-lg shadow-xl p-6 bg-white">
-                            <!-- Background image -->
-                            <div class="absolute top-0 left-0 w-full h-5">
-                                <img src="../public/assets/img/bg-our-product.png" alt="Background" class="w-full object-cover rounded-lg">
-                            </div>
-                
-                            <!-- Skewed white background -->
-                            <div class="absolute left-0 w-full bg-white z-10 top-[322px] h-[26%] skew-y-[6deg] lg:top-[303px] lg:h-[26%] lg:skew-y-[6deg] md:top-[53%] md:h-[26%] md:skew-y-[6deg]"></div>
-                
-                            <!-- Product image -->
-                            <div class="relative z-5">
-                                <img src="../public/assets/img/our-product-1.png" alt="Building Wire" class="mx-auto w-full h-auto">
-                            </div>
-                
-                            <!-- Content -->
-                            <div class="text-left relative z-20 px-5">
-                                <h2 class="text-lg md:text-xl lg:text-2xl font-semibold py-3">High Performance Cable</h2>
-                                <p class="text-sm md:text-base py-3">
-                                    Metus volupat morbi lorem etiam. Integer eu dictum virerra donec id ut donec arcu sed.
-                                </p>
-                                <a href="#" class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-voksel-blue">
-                                    Read More
-                                    <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">&rarr;</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>                
-                
-                <!-- Card 2 -->
-                <div class="col-span-12 md:col-span-12 lg:col-span-4 p-4">
-                    <div class="mx-auto w-[75%] md:w-[50%] lg:w-full">
-                        <div class="relative rounded-lg shadow-xl p-6 bg-white">
-                            <!-- Background image -->
-                            <div class="absolute top-0 left-0 w-full h-5">
-                                <img src="../public/assets/img/bg-our-product.png" alt="Background" class="w-full object-cover rounded-lg">
-                            </div>
-                            
-                            <!-- Skewed white background -->
-                            <div class="absolute left-0 w-full bg-white z-10 top-[322px] h-[26%] skew-y-[6deg] lg:top-[303px] lg:h-[26%] lg:skew-y-[6deg] md:top-[53%] md:h-[26%] md:skew-y-[6deg]"></div>
-                            
-                            <!-- Product image -->
-                            <div class="relative z-5">
-                                <img src="../public/assets/img/our-product-1.png" alt="Building Wire" class="mx-auto w-full h-auto">
-                            </div>
-                            
-                            <!-- Content -->
-                            <div class="text-left relative z-20 px-5">
-                                <h2 class="text-lg md:text-xl lg:text-2xl font-semibold py-3">Power Cable</h2>
-                                <p class="text-sm md:text-base py-3">
-                                    Metus volupat morbi lorem etiam. Integer eu dictum virerra donec id ut donec arcu sed.
-                                </p>
-                                <a href="#" class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-voksel-blue">
-                                    Read More
-                                    <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">&rarr;</span>
-                                </a>
-                            </div>
-                        </div>
+                <div class="hidden lg:block lg:col-span-1"></div>
+                <div class="col-span-12 lg:lg:col-span-6 mx-auto px-7">
+                    <span class="block text-lg md:text-xl lg:text-xl font-medium md:font-medium lg:font-normal py-4 md:py-6 lg:py-8 !leading-9">
+                        Bibendum iaculis amet a feugiat interdum. Non sed lectus in curabitur ullamcorper enim velit senectus proin. Etiam nulla pellentesque metus nullam eu id purus. Scelerisque.
+                    </span>
+                </div>
+
+                <div class="col-span-12 px-7">
+                    <div class="border-b border-gray-200">
+                        <nav class="-mb-px flex gap-6 justify-between" aria-label="Tabs">
+                            <label for="tab-bare-copper" x-on:click="openTab = 1" :class="{ 'border-blue-500 text-black': openTab === 1 }" class="lg:inline-flex items-center gap-2 border-b-8 border-transparent px-1 pb-4 text-sm font-medium text-gray-500 hover:border-blue-500 hover:text-black cursor-pointer">
+                                <h1 class="font-extrabold opacity-15 text-medium lg:text-5xl">01</h1>
+                                <span class="text-sm lg:text-2xl" :class="{ 'font-bold': openTab === 1 }">Bare Copper <br> Conductor</span>
+                            </label>
+        
+                            <label for="tab-bare-aluminium" x-on:click="openTab = 2" :class="{ 'border-blue-500 text-black': openTab === 2 }" class="lg:inline-flex items-center gap-2 border-b-8 border-transparent px-1 pb-4 text-sm font-medium text-gray-500 hover:border-blue-500 hover:text-black cursor-pointer">
+                                <h1 class="font-extrabold opacity-15 text-medium lg:text-5xl">02</h1>
+                                <span class="text-sm lg:text-2xl" :class="{ 'font-bold': openTab === 2 }">Bare Aluminum <br> Conductor</span>
+                            </label>
+    
+                            <label for="tab-power-control" x-on:click="openTab = 3" :class="{ 'border-blue-500 text-black': openTab === 3 }" class="lg:inline-flex items-center gap-2 border-b-8 border-transparent px-1 pb-4 text-sm font-medium text-gray-500 hover:border-blue-500 hover:text-black cursor-pointer">
+                                <h1 class="font-extrabold opacity-15 text-medium lg:text-5xl">03</h1>
+                                <span class="text-sm lg:text-2xl" :class="{ 'font-bold': openTab === 3 }">Power & Control <br> Cable</span>
+                            </label>
+        
+                            <label for="tab-optical-fiber" x-on:click="openTab = 4" :class="{ 'border-blue-500 text-black': openTab === 4 }" class="lg:inline-flex items-center gap-2 border-b-8 border-transparent px-1 pb-4 text-sm font-medium text-gray-500 hover:border-blue-500 hover:text-black cursor-pointer">
+                                <h1 class="font-extrabold opacity-15 text-medium lg:text-5xl">04</h1>
+                                <span class="text-sm lg:text-2xl" :class="{ 'font-bold': openTab === 4 }">Optical Fiber <br> Cable</span>
+                            </label>
+                        </nav>
                     </div>
                 </div>
                 
-                <!-- Card 3 -->
-                <div class="col-span-12 md:col-span-12 lg:col-span-4 p-4">
-                    <div class="mx-auto w-[75%] md:w-[50%] lg:w-full">
-                        <div class="relative rounded-lg shadow-xl p-6 bg-white">
-                            <!-- Background image -->
-                            <div class="absolute top-0 left-0 w-full h-5">
-                                <img src="../public/assets/img/bg-our-product.png" alt="Background" class="w-full object-cover rounded-lg">
-                            </div>
-                            
-                            <!-- Skewed white background -->
-                            <div class="absolute left-0 w-full bg-white z-10 top-[322px] h-[26%] skew-y-[6deg] lg:top-[303px] lg:h-[26%] lg:skew-y-[6deg] md:top-[53%] md:h-[26%] md:skew-y-[6deg]"></div>
-                            
-                            <!-- Product image -->
-                            <div class="relative z-5">
-                                <img src="../public/assets/img/our-product-1.png" alt="Building Wire" class="mx-auto w-full h-auto">
-                            </div>
-                            
-                            <!-- Content -->
-                            <div class="text-left relative z-20 px-5">
-                                <h2 class="text-lg md:text-xl lg:text-2xl font-semibold py-3">Telecommunication Cable</h2>
-                                <p class="text-sm md:text-base py-3">
-                                    Metus volupat morbi lorem etiam. Integer eu dictum virerra donec id ut donec arcu sed.
-                                </p>
-                                <a href="#" class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-voksel-blue">
-                                    Read More
-                                    <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">&rarr;</span>
-                                </a>
-                            </div>
+                <!-- Tab content sections -->
+                <div x-show="openTab === 1" class="transition-all duration-300 col-span-12">
+                    <div class="grid grid-cols-12 px-7">
+                        <div class="col-span-5 lg:col-span-5 lg:block lg:w-full">
+                            <img src="../public/assets/img/img-about-us.png" class="w-full h-auto" alt="About Us Image">
+                        </div>
+                        <div class="col-span-1"></div>
+                        <div class="col-span-6 lg:col-span-6">
+                            <ul class="list-disc pl-6 space-y-2">
+                                <li class="text-lg">All Aluminum Conductor (AAC)</li>
+                                <li class="text-lg">All Aluminum Alloy Conductor (AAAC)</li>
+                                <li class="text-lg">Thermal Aluminum (TAL)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div x-show="openTab === 2" class="transition-all duration-300 col-span-12">
+                    <div class="grid grid-cols-12 px-7">
+                        <div class="col-span-5 lg:col-span-5 lg:block lg:w-full">
+                            <img src="../public/assets/img/img-about-us.png" class="w-full h-auto" alt="About Us Image">
+                        </div>
+                        <div class="col-span-1"></div>
+                        <div class="col-span-6 lg:col-span-6">
+                            <ul class="list-disc pl-6 space-y-2">
+                                <li class="text-lg">Hard Drawn Aluminum (HAL)</li>
+                                <li class="text-lg">Steel Reinforced (ACSR)</li>
+                                <li class="text-lg">Aluminum Conductor</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div x-show="openTab === 3" class="transition-all duration-300 col-span-12">
+                    <div class="grid grid-cols-12 px-7">
+                        <div class="col-span-5 lg:col-span-5 lg:block lg:w-full">
+                            <img src="../public/assets/img/img-about-us.png" class="w-full h-auto" alt="About Us Image">
+                        </div>
+                        <div class="col-span-1"></div>
+                        <div class="col-span-6 lg:col-span-6">
+                            <ul class="list-disc pl-6 space-y-2">
+                                <li class="text-lg">Aluminum Clad-Steel Reinforced (ACSR/AS)</li>
+                                <li class="text-lg">Thermal-Aluminum Conductor Steel Reinforced (T-ACSR)</li>
+                                <li class="text-lg">Thermal Resistant Aluminum Alloy</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div x-show="openTab === 4" class="transition-all duration-300 col-span-12">
+                    <div class="grid grid-cols-12 px-7">
+                        <div class="col-span-5 lg:col-span-5 lg:block lg:w-full">
+                            <img src="../public/assets/img/img-about-us.png" class="w-full h-auto" alt="About Us Image">
+                        </div>
+                        <div class="col-span-1"></div>
+                        <div class="col-span-6 lg:col-span-6">
+                            <ul class="list-disc pl-6 space-y-2">
+                                <li class="text-lg">Aluminum Clad-Steel Reinforced (T-ACSR/AS)</li>
+                                <li class="text-lg">Aluminum Conductor Composite Core (ACCC)</li>
+                                <li class="text-lg">Optical Ground Wire (OPGW)</li>
+                                <li class="text-lg">Galvanized Steel Wire (GSW)</li>
+                                <li class="text-lg">Aluminum Clad Steel Wire (AS)</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -382,149 +284,45 @@
         </div>
     </section>
 
-    <!-- Hot Product -->
-    <section class="relative">
+    <!-- Company Outline -->
+    <section class="relative h-[800px] lg:h-[700px]">
         <!-- Gambar Latar Belakang -->
-        <img src="../public/assets/img/bg-hot-product.png" alt="Background" class="absolute inset-0 w-full h-full object-cover z-0" />
-        <div class="container max-w-full sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1400px] mx-auto py-20 relative flex items-center justify-center">
+        <img src="../public/assets/img/bg-company-outline.png" alt="Background" class="absolute inset-0 w-full h-full object-cover z-0" />
+        <div class="container max-w-full sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1400px] mx-auto h-full flex items-center justify-center relative z-10">
             <div class="grid grid-cols-12 w-full">
-                <!-- Konten About Us -->
-                <div class="col-span-12 lg:col-span-6 flex items-center">
+                <div class="col-span-12 lg:col-span-5 flex items-center px-7">
                     <div class="grid-cols-12">
-                        <span class="bg-voksel-blue bg-opacity-15 px-2 py-1 text-black mb-4 rounded-full">HOT PRODUCT</span>
-                        <h1 class="col-span-12 text-2xl sm:text-3xl md:text-4xl font-bold py-4">
-                            Innovative Solutions for a Brighter Tomorrow
-                        </h1>
-                        <span class="block text-sm sm:text-base md:text-lg lg:text-xl font-extralight py-4 md:py-6 lg:py-8">
-                            Driving innovation that fuels a sustainable future, we deliver exceptional electrical cable solutions that meet the evolving needs of diverse industries across the globe.
+                        <h1 class="text-4xl md:text-4xl lg:text-5xl font-semibold py-4 md:py-6">
+                            Company <span class="block w-full h-[0.3rem] md:h-[0.6rem] lg:h-[1rem]"></span> Outline
+                        </h1>  
+                        <span class="block text-lg md:text-xl lg:text-xl font-medium md:font-medium lg:font-normal py-4 md:py-6 lg:py-8 !leading-9">
+                            Through its continuous pursuit for quality excellence, the Company was awarded numerous international quality certificates, such as ISO 9001:2015 from SGS Yarsley International Certification Services, Ltd.
                         </span>
-                        <div class="py-4 md:py-6 lg:py-8">
-                            <button class="bg-voksel-blue text-white px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 rounded-md text-xs sm:text-sm md:text-base">
-                                Learn More
-                            </button>
-                        </div>
                     </div>
                 </div>
+                <div class="hidden lg:block col-span-1"></div>
                 <!-- Gambar About Us (Hanya Muncul di Layar Besar) -->
-                <div class="col-span-12 lg:col-span-6 hidden lg:block">
-                    <div class="flex justify-end">
-                        <img src="../public/assets/img/img-about-us.png" class="w-[75%] h-auto" alt="About Us Image">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- New Product -->
-    <section class="relative">
-        <img src="../public/assets/img/bg-new-product.png" alt="" class="absolute inset-0 w-full h-full object-cover z-0" />
-        <div class="container max-w-full sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1400px] mx-auto py-12 text-center">
-            <div class="grid grid-cols-12 gap-6">
-                <!-- Judul dan Deskripsi -->
-                <div class="col-span-12 mx-auto z-30">
-                    <button class="bg-voksel-blue px-4 py-2 rounded-full text-white text-sm md:text-base">
-                        NEW PRODUCT
-                    </button>
-                    <h1 class="text-2xl md:text-4xl font-bold py-4 text-white">
-                        Explore Our Latest Innovations
-                    </h1>
-                </div>
-                
-                <!-- Card 1 -->
-                <div class="col-span-12 md:col-span-12 lg:col-span-4 p-4">
-                    <div class="mx-auto w-[75%] md:w-[50%] lg:w-full">
-                        <div class="relative rounded-lg shadow-xl p-6 bg-white">
-                            <!-- Background image -->
-                            <div class="absolute top-0 left-0 w-full h-5">
-                                <img src="../public/assets/img/bg-our-product.png" alt="Background" class="w-full object-cover rounded-lg">
-                            </div>
-                            
-                            <!-- Skewed white background -->
-                            <div class="absolute left-0 w-full bg-white z-10 top-[322px] h-[26%] skew-y-[6deg] lg:top-[303px] lg:h-[26%] lg:skew-y-[6deg] md:top-[48%] md:h-[26%] md:skew-y-[6deg]"></div>
-                            
-                            <!-- Product image -->
-                            <div class="relative z-5">
-                                <img src="../public/assets/img/our-product-1.png" alt="Building Wire" class="mx-auto w-full h-auto">
-                            </div>
-                            
-                            <!-- Content -->
-                            <div class="text-left relative z-20 px-5">
-                                <h2 class="text-lg md:text-xl lg:text-2xl font-semibold py-3">Building <br> Wire</h2>
-                                <p class="text-sm md:text-base py-3">
-                                    Our cables include products suitable for all domestic and commercial wiring circuits.
-                                </p>
-                                <div class="text-center relative z-20 mt-4">
-                                    <a href="#" class="w-full btn bg-voksel-blue text-white rounded-md text-sm font-light md:text-base py-3">
-                                        Download PDF Catalogue
-                                    </a>
-                                </div>
-                            </div>
+                <div class="col-span-12 lg:col-span-6 px-7">
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="h-44 rounded-2xl bg-white shadow-lg p-6 flex flex-col items-start">
+                            <img src="../public/assets/icons/circle-star.svg" alt="" srcset="">
+                            <h5 class="font-semibold text-lg py-3">Establishment</h5>
+                            <span>April 19, 1971</span>
                         </div>
-                    </div>
-                </div>
-                
-                <!-- Card 2 -->
-                <div class="col-span-12 md:col-span-12 lg:col-span-4 p-4">
-                    <div class="mx-auto w-[75%] md:w-[50%] lg:w-full">
-                        <div class="relative rounded-lg shadow-xl p-6 bg-white">
-                            <!-- Background image -->
-                            <div class="absolute top-0 left-0 w-full h-5">
-                                <img src="../public/assets/img/bg-our-product.png" alt="Background" class="w-full object-cover rounded-lg">
-                            </div>
-                            
-                            <!-- Skewed white background -->
-                            <div class="absolute left-0 w-full bg-white z-10 top-[322px] h-[26%] skew-y-[6deg] lg:top-[303px] lg:h-[26%] lg:skew-y-[6deg] md:top-[48%] md:h-[26%] md:skew-y-[6deg]"></div>
-                            
-                            <!-- Product image -->
-                            <div class="relative z-5">
-                                <img src="../public/assets/img/our-product-1.png" alt="Building Wire" class="mx-auto w-full h-auto">
-                            </div>
-                            
-                            <!-- Content -->
-                            <div class="text-left relative z-20 px-5">
-                                <h2 class="text-lg md:text-xl lg:text-2xl font-semibold py-3">Aluminium Conductor Composite Core</h2>
-                                <p class="text-sm md:text-base py-3">
-                                    Voksel's high-capacity cables with exceptional strength, low sag, and excellent corrosion resistance.
-                                </p>
-                                <div class="text-center relative z-20 mt-4">
-                                    <a href="#" class="w-full btn bg-voksel-blue text-white rounded-md text-sm font-light md:text-base py-3">
-                                        Download PDF Catalogue
-                                    </a>
-                                </div>
-                            </div>
+                        <div class="h-44 rounded-2xl bg-white shadow-lg p-6 flex flex-col items-start">
+                            <img src="../public/assets/icons/circle-star.svg" alt="" srcset="">
+                            <h5 class="font-semibold text-lg py-3">Establishment</h5>
+                            <span>April 19, 1971</span>
                         </div>
-                    </div>
-                </div>
-                
-                <!-- Card 3 -->
-                <div class="col-span-12 md:col-span-12 lg:col-span-4 p-4">
-                    <div class="mx-auto w-[75%] md:w-[50%] lg:w-full">
-                        <div class="relative rounded-lg shadow-xl p-6 bg-white">
-                            <!-- Background image -->
-                            <div class="absolute top-0 left-0 w-full h-5">
-                                <img src="../public/assets/img/bg-our-product.png" alt="Background" class="w-full object-cover rounded-lg">
-                            </div>
-                            
-                            <!-- Skewed white background -->
-                            <div class="absolute left-0 w-full bg-white z-10 top-[322px] h-[26%] skew-y-[6deg] lg:top-[303px] lg:h-[26%] lg:skew-y-[6deg] md:top-[48%] md:h-[26%] md:skew-y-[6deg]"></div>
-                            
-                            <!-- Product image -->
-                            <div class="relative z-5">
-                                <img src="../public/assets/img/our-product-1.png" alt="Building Wire" class="mx-auto w-full h-auto">
-                            </div>
-                            
-                            <!-- Content -->
-                            <div class="text-left relative z-20 px-5">
-                                <h2 class="text-lg md:text-xl lg:text-2xl font-semibold py-3">Telecommunication <br> Cable</h2>
-                                <p class="text-sm md:text-base py-3">
-                                    Designed to resist UV, weather, and extreme temperatures, they ensure reliable power transfer.
-                                </p>
-                                <div class="text-center relative z-20 mt-4">
-                                    <a href="#" class="w-full btn bg-voksel-blue text-white rounded-md text-sm font-light md:text-base py-3">
-                                        Download PDF Catalogue
-                                    </a>
-                                </div>
-                            </div>
+                        <div class="h-44 rounded-2xl bg-white shadow-lg p-6 flex flex-col items-start">
+                            <img src="../public/assets/icons/circle-star.svg" alt="" srcset="">
+                            <h5 class="font-semibold text-lg py-3">Establishment</h5>
+                            <span>April 19, 1971</span>
+                        </div>
+                        <div class="h-44 rounded-2xl bg-white shadow-lg p-6 flex flex-col items-start">
+                            <img src="../public/assets/icons/circle-star.svg" alt="" srcset="">
+                            <h5 class="font-semibold text-lg py-3">Establishment</h5>
+                            <span>April 19, 1971</span>
                         </div>
                     </div>
                 </div>
@@ -532,499 +330,195 @@
         </div>
     </section>
 
-    <!-- Catalogue Product -->
-    <section class="relative">
-        <img src="../public/assets/img/bg-about-us.png" alt="Background" class="absolute inset-0 w-full h-full object-cover z-0">
+    <!-- Our History -->
+    <section class="relative h-[900px]">
+        <img src="../public/assets/img/bg-our-history.png" alt="Background" class="absolute inset-0 w-full h-full object-cover z-0" />
+        <div class="container max-w-full sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1400px] mx-auto h-full flex items-center justify-center relative z-10">
+            <div class="grid grid-cols-12 w-full">
+                <div class="col-span-12 lg:col-span-12 flex items-center justify-center px-7">
+                    <div class="grid-cols-12 py-5 lg:py-0">
+                        <div class="col-span-12 flex items-center justify-center"">
+                            <button class="bg-white bg-opacity-15 px-3 py-2 text-white mb-4 rounded-3xl">OUR HISTORY</button>
+                        </div>
+                        <div class="col-span-12 flex items-center justify-center"">
+                            <h1 class="text-4xl md:text-4xl lg:text-5xl font-semibold py-4 md:py-6 text-white">
+                                A Historical Overview of Voksel Electric
+                            </h1> 
+                        </div>
+                        <div class="col-span-12 flex items-center justify-center"">
+                            <span class="block text-lg md:text-xl lg:text-xl font-medium md:font-medium lg:font-normal py-4 md:py-6 lg:py-8 !leading-9">
+                                Through its continuous pursuit for quality excellence, the Company was awarded numerous international quality certificates, such as ISO 9001:2015 from SGS Yarsley International Certification Services, Ltd.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Vision -->
+    <section class="relative bg-white">
         <div class="container max-w-full sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1400px] mx-auto py-20 relative flex items-center justify-center">
             <div class="grid grid-cols-12 w-full">
-                <div class="col-span-12 mx-auto z-30 text-center pb-9">
-                    <button class="bg-voksel-blue bg-opacity-15 px-4 py-2 rounded-full text-sm md:text-base">
-                        CATALOGUE
-                    </button>
-                    <h1 class="text-2xl md:text-4xl font-bold py-4">
-                        Quality Cable Solutions for Every Need
-                    </h1>
-                </div>
-                <!-- Gambar About Us (Hanya Muncul di Layar Besar) -->
-                
-                <div class="col-span-12 lg:col-span-12 relative">
-                    <div class="-mx-6 lg:col-span-12 lg:mx-0">
-                      <div id="catalogue-slider" class="keen-slider relative">
-                        <div class="keen-slider__slide flex justify-center p-2 my-7 rounded-2xl m-0 lg:!min-w-[25%] lg:!h-full">
-                          <img src="../public/assets/img/catalogue-1.png" class="w-[75%] lg:w-full h-auto" alt="About Us Image">
-                        </div>
-                        <div class="keen-slider__slide flex justify-center p-2 my-7 rounded-2xl m-0 lg:!min-w-[25%] lg:!h-full">
-                          <img src="../public/assets/img/catalogue-2.png" class="w-[75%] lg:w-full h-auto" alt="About Us Image">
-                        </div>
-                        <div class="keen-slider__slide flex justify-center p-2 my-7 rounded-2xl m-0 lg:!min-w-[25%] lg:!h-full">
-                          <img src="../public/assets/img/catalogue-3.png" class="w-[75%] lg:w-full h-auto" alt="About Us Image">
-                        </div>
-                        <div class="keen-slider__slide flex justify-center p-2 my-7 rounded-2xl m-0 lg:!min-w-[25%] lg:!h-full">
-                          <img src="../public/assets/img/catalogue-4.png" class="w-[75%] lg:w-full h-auto" alt="About Us Image">
-                        </div>
-                        <div class="keen-slider__slide flex justify-center p-2 my-7 rounded-2xl m-0 lg:!min-w-[25%] lg:!h-full">
-                          <img src="../public/assets/img/catalogue-3.png" class="w-[75%] lg:w-full h-auto" alt="About Us Image">
-                        </div>
-                      </div>
-                      <!-- Buttons -->
-                      <div class="absolute inset-0 flex items-center justify-between px-4">
-                        <button
-                          aria-label="Previous slide"
-                          id="catalogue-slider-previous"
-                          class="rounded-full bg-white shadow-lg p-6 lg:-left-14 lg:relative text-voksel-blue hover:bg-voksel-blue hover:text-white transition"
-                        >
-                          <svg
-                            class="w-5 h-5 lg:w-9 lg:h-9 -rotate-180 transform"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-                          </svg>
-                        </button>
-                        <button
-                          aria-label="Next slide"
-                          id="catalogue-slider-next"
-                          class="rounded-full bg-white shadow-lg p-6 lg:-right-14 lg:relative text-voksel-blue hover:bg-voksel-blue hover:text-white transition"
-                        >
-                          <svg
-                            class="w-5 h-5 lg:w-9 lg:h-9"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-                          </svg>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                  
-
-                <!-- <div class="col-span-12 lg:col-span-12">
-                    <div class="-mx-6 lg:col-span-12 lg:mx-0">
-                        <div id="catalogue-slider" class="keen-slider">
-                          <div class="keen-slider__slide flex justify-center p-2 my-7 rounded-2xl m-0 lg:!min-w-[25%] lg:!h-full">
-                            <img src="../public/assets/img/catalogue-1.png" class="w-[75%] lg:w-full h-auto" alt="About Us Image">
-                          </div>
-                
-                          <div class="keen-slider__slide flex justify-center p-2 my-7 rounded-2xl m-0 lg:!min-w-[25%] lg:!h-full">
-                            <img src="../public/assets/img/catalogue-2.png" class="w-[75%] lg:w-full h-auto" alt="About Us Image">
-                          </div>
-                
-                          <div class="keen-slider__slide flex justify-center p-2 my-7 rounded-2xl m-0 lg:!min-w-[25%] lg:!h-full">
-                            <img src="../public/assets/img/catalogue-3.png" class="w-[75%] lg:w-full h-auto" alt="About Us Image">
-                          </div>
-
-                          <div class="keen-slider__slide flex justify-center p-2 my-7 rounded-2xl m-0 lg:!min-w-[25%] lg:!h-full">
-                            <img src="../public/assets/img/catalogue-4.png" class="w-[75%] lg:w-full h-auto" alt="About Us Image">
-                          </div>
-
-                          <div class="keen-slider__slide flex justify-center p-2 my-7 rounded-2xl m-0 lg:!min-w-[25%] lg:!h-full">
-                            <img src="../public/assets/img/catalogue-3.png" class="w-[75%] lg:w-full h-auto" alt="About Us Image">
-                          </div>
-                        </div>
+                <div class="col-span-12 lg:col-span-6 px-7">
+                    <div class="flex justify-center lg:justify-left">
+                        <img src="../public/assets/img/img-our-vision.png" class="w-[75%] h-auto" alt="About Us Image">
                     </div>
                 </div>
-                <div class="col-span-12">
-                    <div class="mt-8 flex justify-center gap-4">
-                        <button
-                          aria-label="Previous slide"
-                          id="catalogue-slider-previous"
-                          class="rounded-full border border-voksel-blue p-4 text-vokselborder-voksel-blue transition hover:bg-vokselborder-voksel-blue hover:text-white"
-                        >
-                          <svg
-                            class="size-5 -rotate-180 transform"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-                          </svg>
-                        </button>
-                  
-                        <button
-                          aria-label="Next slide"
-                          id="catalogue-slider-next"
-                          class="rounded-full border border-voksel-blue p-4 text-vokselborder-voksel-blue transition hover:bg-vokselborder-voksel-blue hover:text-white"
-                        >
-                          <svg
-                            class="size-5"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-                          </svg>
-                        </button>
-                    </div>
-                </div> -->
-
-                <div class="col-span-12">
-                    <div class="text-center relative z-20 mt-12">
-                        <a href="#" class="w-1/2 lg:w-1/4 btn bg-voksel-blue text-white rounded-md text-sm font-light md:text-base py-3">
-                            See All of Our Product Catalogue
-                        </a>
+                <div class="hidden lg:block col-span-1"></div>
+                <div class="col-span-12 lg:col-span-5 flex items-center justify-center px-7">
+                    <div class="grid-cols-12 py-5 lg:py-0">
+                        <div class="col-span-12 flex items-center justify-center lg:items-start lg:justify-start"">
+                            <button class="bg-voksel-blue bg-opacity-15 px-3 py-2 text-voksel-blue mb-4 rounded-3xl">OUR VISION</button>
+                        </div>
+                        <div class="col-span-12 flex items-center justify-center lg:items-start lg:justify-start"">
+                            <h1 class="col-span-12 text-5xl md:text-6xl lg:text-6xl italic font-bold py-4">
+                                VISION
+                            </h1>
+                        </div>
+                        <div class="col-span-12 flex items-center justify-center lg:items-start lg:justify-start"">
+                            <span class="block text-2xl md:text-4xl lg:text-4xl italic font-semibold py-4 md:py-6 lg:py-8 text-center lg:text-left">
+                                To be a World Class Total Cable Solution Provider in Indonesia
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimony -->
-    <section class="relative">
-        <!-- Gambar Latar Belakang -->
-        <img src="../public/assets/img/bg-testimonial.png" alt="Background" class="absolute inset-0 w-full h-full object-cover z-0" />
+    <!-- Our Mission -->
+    <section class="relative bg-white">
         <div class="container max-w-full sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1400px] mx-auto py-20 relative flex items-center justify-center">
             <div class="grid grid-cols-12 w-full">
-                <!-- Konten About Us -->
-                <div class="col-span-12 lg:col-span-6 flex items-center lg:pr-24 text-center lg:text-left p-12">
-                    <div class="grid-cols-12">
-                        <span class="bg-voksel-blue bg-opacity-15 px-5 py-2 text-black rounded-full">TESTIMONY</span>
-                        <h1 class="col-span-12 text-2xl md:text-4xl lg:text-5xl font-semibold py-11">
-                            What Our Clients Say About Our Solutions
-                        </h1>
-                        <span class="block text-sm sm:text-base md:text-lg lg:text-xl font-extralight">
-                            Bibendum iaculis amet a feugiat interdum. Non sed lectus in curabitur ullamcorper enim velit senectus proin. Etiam nulla pellentesque metus nullam eu id purus.
-                        </span>
-                        <div class="py-4 md:py-6 lg:py-8">
-                            <div class="px-12">
-                                <div class="mt-4 overflow-hidden rounded-full bg-gray-200">
-                                <div class="h-2 w-1/4 rounded-full bg-voksel-blue"></div>
-                                </div>
-                            </div>
-                            <div class="hidden lg:mt-8 lg:flex lg:gap-4 justify-end">
-                                <button
-                                  aria-label="Previous slide"
-                                  id="testimony-slider-previous-desktop"
-                                  class="p-3 text-vokselborder-voksel-blue transition hover:bg-vokselborder-voksel-blue hover:text-white"
-                                >
-                                  <img src="../public/assets/icons/arrow-left.svg" alt="" srcset="">
-                                </button>
-                      
-                                <button
-                                  aria-label="Next slide"
-                                  id="testimony-slider-next-desktop"
-                                  class="p-3 text-vokselborder-voksel-blue transition hover:bg-vokselborder-voksel-blue hover:text-white"
-                                >
-                                  <img src="../public/assets/icons/arrow-right.svg" alt="" srcset="">
-                                </button>
-                            </div>
+                <div class="col-span-12 lg:col-span-6 px-7 block md:block lg:hidden">
+                    <div class="flex justify-center lg:justify-left">
+                        <img src="../public/assets/img/img-our-mission.png" class="w-[75%] h-auto" alt="About Us Image">
+                    </div>
+                </div>
+                <div class="col-span-12 lg:col-span-5 flex items-center justify-center px-7">
+                    <div class="grid-cols-12 py-5 lg:py-0">
+                        <div class="col-span-12 flex items-center justify-center lg:items-start lg:justify-start">
+                            <button class="bg-voksel-blue bg-opacity-15 px-3 py-2 text-voksel-blue mb-4 rounded-3xl">OUR OUR MISSION</button>
+                        </div>
+                        <div class="col-span-12 flex items-center justify-center lg:items-start lg:justify-start"">
+                            <h1 class="col-span-12 text-5xl md:text-6xl lg:text-6xl italic font-bold py-4">
+                                MISSION
+                            </h1>
+                        </div>
+                        <div class="col-span-12 flex items-center justify-center lg:items-start lg:justify-start"">
+                            <span class="block text-2xl md:text-4xl lg:text-4xl italic font-semibold py-4 md:py-6 lg:py-8 text-center lg:text-left">
+                                To Contribute National Growth and Optimize Corporate Values through Superior Solutions and Sustainable Social Responsibility.
+                            </span>
                         </div>
                     </div>
                 </div>
-                <div class="col-span-12 lg:col-span-6">
-                    <div class="-mx-6 lg:col-span-2 lg:mx-0">
-                        <div id="testimony-slider" class="keen-slider rounded-bl-[28px] rounded-tl-[28px]">
-                          <div class="keen-slider__slide shadow-xl p-8 my-7 rounded-2xl lg:ml-8 m-0">
-                            <div class="relative rounded-lg ">
-                                <div class="text-left relative z-20 p-5">
-                                     <p class="font-light text-base leading-7">
-                                         Tempor vel magna nunc orci risus sed non nunc. Sit sed at ac morbi sollicitudin ac proin. 
-                                         Condimentum lectus faucibus id sit ornare. Morbi viverra consequat lobortis ut lorem ultricies lacus. Orci eu massa convallis urna. 
-                                         Eget orci varius nunc tortor duis leo diam pharetra malesuada. Est sed pellentesque commodo suspendisse risus in magna.
-                                     </p>
-                                     <div class="text-left relative inline-flex z-20 mt-4 pt-10">
-                                         <img src="../public/assets/img/img-user.png" alt="">
-                                         <div class="ml-4">
-                                             <p class="font-normal text-base leading-7">John Doe</p>
-                                             <p class="font-normal text-voksel-blue text-base leading-7">Companyname, Indonesia</p>
-                                         </div>
-                                    </div>
-                                 </div>
-                            </div>
-                          </div>
-                
-                          <div class="keen-slider__slide shadow-xl p-8 my-7 rounded-2xl" style="max-width: 500px;">
-                            <div class="relative rounded-lg">
-                                <div class="text-left relative z-20 p-5">
-                                     <p class="font-light text-base leading-7">
-                                         Tempor vel magna nunc orci risus sed non nunc. Sit sed at ac morbi sollicitudin ac proin. 
-                                         Condimentum lectus faucibus id sit ornare. Morbi viverra consequat lobortis ut lorem ultricies lacus. Orci eu massa convallis urna. 
-                                         Eget orci varius nunc tortor duis leo diam pharetra malesuada. Est sed pellentesque commodo suspendisse risus in magna.
-                                     </p>
-                                     <div class="text-left relative inline-flex z-20 mt-4 pt-10">
-                                         <img src="../public/assets/img/img-user.png" alt="">
-                                         <div class="ml-4">
-                                             <p class="font-normal text-base leading-7">John Doe</p>
-                                             <p class="font-normal text-voksel-blue text-base leading-7">Companyname, Indonesia</p>
-                                         </div>
-                                    </div>
-                                 </div>
-                            </div>
-                          </div>
-                
-                          <div class="keen-slider__slide shadow-xl p-8 my-7 rounded-2xl" style="max-width: 500px !important;">
-                            <div class="relative rounded-lg">
-                                <div class="text-left relative z-20 p-5">
-                                     <p class="font-light text-base leading-7">
-                                         Tempor vel magna nunc orci risus sed non nunc. Sit sed at ac morbi sollicitudin ac proin. 
-                                         Condimentum lectus faucibus id sit ornare. Morbi viverra consequat lobortis ut lorem ultricies lacus. Orci eu massa convallis urna. 
-                                         Eget orci varius nunc tortor duis leo diam pharetra malesuada. Est sed pellentesque commodo suspendisse risus in magna.
-                                     </p>
-                                     <div class="text-left relative inline-flex z-20 mt-4 pt-10">
-                                         <img src="../public/assets/img/img-user.png" alt="">
-                                         <div class="ml-4">
-                                             <p class="font-normal text-base leading-7">John Doe</p>
-                                             <p class="font-normal text-voksel-blue text-base leading-7">Companyname, Indonesia</p>
-                                         </div>
-                                    </div>
-                                 </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-span-12">
-                    <div class="mt-8 flex justify-center gap-4 lg:hidden">
-                        <button
-                          aria-label="Previous slide"
-                          id="testimony-slider-previous"
-                          class="rounded-full border border-voksel-blue p-4 text-vokselborder-voksel-blue transition hover:bg-vokselborder-voksel-blue hover:text-white"
-                        >
-                          <svg
-                            class="size-5 -rotate-180 transform"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-                          </svg>
-                        </button>
-                  
-                        <button
-                          aria-label="Next slide"
-                          id="testimony-slider-next"
-                          class="rounded-full border border-voksel-blue p-4 text-vokselborder-voksel-blue transition hover:bg-vokselborder-voksel-blue hover:text-white"
-                        >
-                          <svg
-                            class="size-5"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-                          </svg>
-                        </button>
+                <div class="hidden lg:block col-span-1"></div>
+                <div class="col-span-12 lg:col-span-6 px-7 hidden md:hidden lg:block">
+                    <div class="flex justify-center lg:justify-left">
+                        <img src="../public/assets/img/img-our-mission.png" class="w-[75%] h-auto" alt="About Us Image">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Information Center -->
-    <section class="relative">
-        <div class="container mx-4 sm:mx-8 md:mx-12 lg:mx-auto max-w-full sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1400px] py-12 text-center">
+    <!-- Empowering -->
+    <section class="relative h-[900px]">
+        <img src="../public/assets/img/bg-empowering.png" alt="Background" class="absolute inset-0 w-full h-full object-cover z-0" />
+        <div class="container max-w-full sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1400px] mx-auto h-full flex items-center justify-center relative z-10">
             <div class="grid grid-cols-12 w-full">
-                <!-- Judul dan Deskripsi -->
-                <div class="col-span-12 mx-auto text-center">
-                    <button class="bg-voksel-blue bg-opacity-15 px-4 py-2 text-black rounded-full text-sm md:text-base">
-                        INFORMATION CENTER
-                    </button>
-                    <h1 class="text-2xl md:text-4xl font-bold py-4">
-                        Current News and Development
-                    </h1>
+                <div class="hidden lg:block lg:col-span-6"></div>
+                <div class="col-span-12 lg:col-span-8 px-12 md:px-0 lg:px-0">
+                    <h1 class="text-4xl md:text-4xl lg:text-5xl font-semibold py-4 md:py-6 lg:py-8 text-white text-center lg:text-left">
+                        Empowering Growth Through Quality and Responsibility
+                    </h1>    
+                    <span class="block text-white text-lg md:text-xl lg:text-xl font-medium md:font-medium lg:font-normal py-4 md:py-6 lg:py-8 !leading-9 text-center md:text-center lg:text-left">
+                        We aim to strengthen our position as a leading cable manufacturer by providing more advanced technology premium cables with quality supporting products and installation solution services. In order to develop sustainable growth, healthy profits and competent Voksel employees, our high integrity employees have to contribute and help us build a better community together. 
+                    </span>
+                    <span class="block text-white text-lg md:text-xl lg:text-xl font-medium md:font-medium lg:font-normal py-4 md:py-6 lg:py-8 !leading-9 text-center md:text-center lg:text-left">
+                        We also perceive the importance of being involved in having Sustainable Social Responsibility to contribute in maintaining economic, financial, social and environmental sustainability in order to contribute to the national growth.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values -->
+    <section class="relative h-auto lg:h-[900px]">
+        <!-- Background Image -->
+        <img src="../public/assets/img/bg-principles.png" alt="Background" class="absolute inset-0 w-full h-full object-cover z-0">
+    
+        <!-- Content Container -->
+        <div class="container max-w-[1400px] mx-auto h-full flex flex-col items-center justify-center relative z-10 px-4">
+            <!-- Header Content -->
+            <div class="text-center">
+                <button class="bg-voksel-blue bg-opacity-15 px-4 py-2 text-voksel-blue mb-4 rounded-3xl">
+                    VALUES
+                </button>
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-semibold py-4 md:py-6">
+                    The Principles That We Consistently Uphold and Adhere To
+                </h1>
+                <p class="text-base md:text-lg lg:text-xl py-4 md:py-6 lg:py-8 leading-relaxed">
+                    We realize that all stakeholders are an important part of the company's progress. 
+                    We hope to achieve our new vision and mission with the full support and participation 
+                    of our local community. Together with all our employees who shall practice and uphold 
+                    <span class="font-semibold">CIPARS</span> as our business core values, we hope for all your blessings as we strive for a better future.
+                </p>
+            </div>
+    
+            <!-- Product Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-6 mt-10 w-full">
+                <!-- Product Card -->
+                <div class="bg-white rounded-lg shadow-xl p-6 relative">
+                    <div class="relative h-24 mb-6">
+                        <img src="../public/assets/img/bg-our-product.png" alt="Background" class="absolute inset-0 w-full h-full object-cover rounded-lg">
+                    </div>
+                    <img src="../public/assets/img/our-product-1.png" alt="Product" class="mx-auto w-full h-auto relative z-10">
+                    <h2 class="text-lg md:text-xl lg:text-2xl font-semibold mt-4 text-center">Customer Focus</h2>
                 </div>
     
-                <div class="col-span-12 lg:col-span-6">
-                    <div class="-mx-6 lg:col-span-2 lg:mx-0">
-                        <div id="information-slider" class="keen-slider rounded-bl-[28px] rounded-tl-[28px]">
-                          <div class="keen-slider__slide shadow-xl p-8 my-7 rounded-2xl lg:ml-8 m-0">
-                            <div class="mx-auto w-full md:w-[75%] lg:w-full">
-                                <!-- <article class="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-xl"> -->
-                                    <img
-                                    alt=""
-                                    src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-                                    class="h-56 w-full object-cover rounded-bl-2xl"
-                                    />
-                                    <div class="p-4 sm:p-6 text-left">
-                                        <p class="text-base text-gray-400 font-normal" >24 Jan 2024</p>
-                                        <a href="#">
-                                            <h3 class="text-2xl font-semibold">
-                                                Sapien viverra a vel elit vel at non in
-                                            </h3>
-                                        </a>
-                                        <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-                                            Metus volutpat morbi lorem etiam. Integer eu dictum viverra donec id ut donec arcu sed.
-                                        </p>
-                                        <a href="#" class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-voksel-blue">
-                                            Read More
-                                            <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">&rarr;</span>
-                                        </a>
-                                    </div>
-                                <!-- </article> -->
-                            </div>
-                          </div>
-                
-                          <div class="keen-slider__slide shadow-xl p-8 my-7 rounded-2xl">
-                            <div class="mx-auto w-full md:w-[75%] lg:w-full">
-                                <!-- <article class="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-xl"> -->
-                                    <img
-                                    alt=""
-                                    src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-                                    class="h-56 w-full object-cover rounded-bl-2xl"
-                                    />
-                                    <div class="p-4 sm:p-6 text-left">
-                                        <p class="text-base text-gray-400 font-normal" >24 Jan 2024</p>
-                                        <a href="#">
-                                            <h3 class="text-2xl font-semibold">
-                                                Sapien viverra a vel elit vel at non in
-                                            </h3>
-                                        </a>
-                                        <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-                                            Metus volutpat morbi lorem etiam. Integer eu dictum viverra donec id ut donec arcu sed.
-                                        </p>
-                                        <a href="#" class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-voksel-blue">
-                                            Read More
-                                            <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">&rarr;</span>
-                                        </a>
-                                    </div>
-                                <!-- </article> -->
-                            </div>
-                          </div>
-                
-                          <div class="keen-slider__slide shadow-xl p-8 my-7 rounded-2xl" style="max-width: 500px !important;">
-                            <div class="mx-auto w-full md:w-[75%] lg:w-full">
-                                <!-- <article class="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-xl"> -->
-                                    <img
-                                    alt=""
-                                    src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-                                    class="h-56 w-full object-cover rounded-bl-2xl"
-                                    />
-                                    <div class="p-4 sm:p-6 text-left">
-                                        <p class="text-base text-gray-400 font-normal" >24 Jan 2024</p>
-                                        <a href="#">
-                                            <h3 class="text-2xl font-semibold">
-                                                Sapien viverra a vel elit vel at non in
-                                            </h3>
-                                        </a>
-                                        <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-                                            Metus volutpat morbi lorem etiam. Integer eu dictum viverra donec id ut donec arcu sed.
-                                        </p>
-                                        <a href="#" class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-voksel-blue">
-                                            Read More
-                                            <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">&rarr;</span>
-                                        </a>
-                                    </div>
-                                <!-- </article> -->
-                            </div>
-                        </div>
+                <!-- Repeat for the other 5 cards -->
+                <div class="bg-white rounded-lg shadow-xl p-6 relative">
+                    <div class="relative h-24 mb-6">
+                        <img src="../public/assets/img/bg-our-product.png" alt="Background" class="absolute inset-0 w-full h-full object-cover rounded-lg">
                     </div>
+                    <img src="../public/assets/img/our-product-1.png" alt="Product" class="mx-auto w-full h-auto relative z-10">
+                    <h2 class="text-lg md:text-xl lg:text-2xl font-semibold mt-4 text-center">Integrity & Honesty</h2>
                 </div>
-                <div class="col-span-12">
-                    <div class="mt-8 flex justify-center gap-4 lg:hidden">
-                        <button
-                          aria-label="Previous slide"
-                          id="information-slider-previous"
-                          class="rounded-full border border-voksel-blue p-4 text-vokselborder-voksel-blue transition hover:bg-vokselborder-voksel-blue hover:text-white"
-                        >
-                          <svg
-                            class="size-5 -rotate-180 transform"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-                          </svg>
-                        </button>
-                  
-                        <button
-                          aria-label="Next slide"
-                          id="information-slider-next"
-                          class="rounded-full border border-voksel-blue p-4 text-vokselborder-voksel-blue transition hover:bg-vokselborder-voksel-blue hover:text-white"
-                        >
-                          <svg
-                            class="size-5"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-                          </svg>
-                        </button>
+                <div class="bg-white rounded-lg shadow-xl p-6 relative">
+                    <div class="relative h-24 mb-6">
+                        <img src="../public/assets/img/bg-our-product.png" alt="Background" class="absolute inset-0 w-full h-full object-cover rounded-lg">
                     </div>
+                    <img src="../public/assets/img/our-product-1.png" alt="Product" class="mx-auto w-full h-auto relative z-10">
+                    <h2 class="text-lg md:text-xl lg:text-2xl font-semibold mt-4 text-center">Passion for Excellence</h2>
                 </div>
-
-                <div class="col-span-12 px-8">
-                    <a class="inline-block rounded border w-full border-voksel-blue px-12 py-3 text-sm font-medium text-voksel-blue hover:bg-voksel-blue hover:text-white focus:outline-none focus:ring active:bg-voksel-blue" href="#">
-                        Discover More News
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>    
-
-    <!-- Reports -->
-    <section class="relative">
-        <!-- Gambar Latar Belakang -->
-        <img src="../public/assets/img/bg-reports.png" alt="Background" class="absolute inset-0 w-full h-full object-cover z-0" />
-        <div class="container max-w-full sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1400px] mx-auto py-20 relative flex items-center justify-center">
-            <div class="grid grid-cols-12 w-full">
-                <!-- Konten About Us -->
-                <div class="col-span-12 lg:col-span-6 flex items-center">
-                    <div class="grid-cols-12">
-                        <span class="bg-voksel-blue bg-opacity-15 px-2 py-1 text-black mb-4 rounded-full">REPORTS</span>
-                        <h1 class="col-span-12 text-2xl sm:text-3xl md:text-4xl font-bold py-4">
-                            Annual Performance & Highlights
-                        </h1>
-                        <ul>
-                            <li class="flex items-center justify-between py-3">
-                                <div class="flex w-0 flex-1 items-left">
-                                  <div class="flex min-w-0 flex-1 gap-2">
-                                    <span class="truncate font-medium">Tellus dui consectetur sapien ultricies venenatis.</span>
-                                  </div>
-                                </div>
-                                <div class="ms-4 flex-shrink-0">
-                                  <a href="#" class="link link-primary bg-voksel-dark px-4 py-2 text-white rounded-md">Lihat ePDF</a>
-                                </div>
-                            </li>
-                            <div class="divider"></div>
-                            <li class="flex items-center justify-between py-3">
-                                <div class="flex w-0 flex-1 items-left">
-                                  <div class="flex min-w-0 flex-1 gap-2">
-                                    <span class="truncate font-medium">Tortor cursus et mollis blandit sapien. Nunc justo in.</span>
-                                  </div>
-                                </div>
-                                <div class="ms-4 flex-shrink-0">
-                                  <a href="#" class="link link-primary bg-voksel-dark px-4 py-2 text-white rounded-md">Lihat ePDF</a>
-                                </div>
-                            </li>
-                            <div class="divider"></div>
-                            <li class="flex items-center justify-between py-3">
-                                <div class="flex w-0 flex-1 items-left">
-                                  <div class="flex min-w-0 flex-1 gap-2">
-                                    <span class="truncate font-medium">Vehicula vulputate gravida tempus posuere orci.</span>
-                                  </div>
-                                </div>
-                                <div class="ms-4 flex-shrink-0">
-                                  <a href="#" class="link link-primary bg-voksel-dark px-4 py-2 text-white rounded-md">Lihat ePDF</a>
-                                </div>
-                            </li>
-                        </ul>
-                        <div class="py-4 md:py-6 lg:py-10">
-                            <button class="bg-voksel-blue text-white w-full px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 rounded-md text-base font-normal sm:text-sm md:text-base">
-                                See All Publications
-                            </button>
-                        </div>
+                <div class="bg-white rounded-lg shadow-xl p-6 relative">
+                    <div class="relative h-24 mb-6">
+                        <img src="../public/assets/img/bg-our-product.png" alt="Background" class="absolute inset-0 w-full h-full object-cover rounded-lg">
                     </div>
+                    <img src="../public/assets/img/our-product-1.png" alt="Product" class="mx-auto w-full h-auto relative z-10">
+                    <h2 class="text-lg md:text-xl lg:text-2xl font-semibold mt-4 text-center">Accountability</h2>
                 </div>
-                <!-- Gambar About Us (Hanya Muncul di Layar Besar) -->
-                <div class="col-span-12 lg:col-span-6 hidden lg:block">
-                    <div class="flex justify-end">
-                        <img src="../public/assets/img/img-report.png" class="w-[75%] h-auto" alt="About Us Image">
+                <div class="bg-white rounded-lg shadow-xl p-6 relative">
+                    <div class="relative h-24 mb-6">
+                        <img src="../public/assets/img/bg-our-product.png" alt="Background" class="absolute inset-0 w-full h-full object-cover rounded-lg">
                     </div>
+                    <img src="../public/assets/img/our-product-1.png" alt="Product" class="mx-auto w-full h-auto relative z-10">
+                    <h2 class="text-lg md:text-xl lg:text-2xl font-semibold mt-4 text-center">Respect & Recognition</h2>
+                </div>
+                <div class="bg-white rounded-lg shadow-xl p-6 relative">
+                    <div class="relative h-24 mb-6">
+                        <img src="../public/assets/img/bg-our-product.png" alt="Background" class="absolute inset-0 w-full h-full object-cover rounded-lg">
+                    </div>
+                    <img src="../public/assets/img/our-product-1.png" alt="Product" class="mx-auto w-full h-auto relative z-10">
+                    <h2 class="text-lg md:text-xl lg:text-2xl font-semibold mt-4 text-center">Social Responsibility</h2>
                 </div>
             </div>
         </div>
     </section>
+    
+    
 
     <!-- Footer -->
     <footer class="relative">
@@ -1145,118 +639,56 @@
     </footer>
 </body>
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        AOS.init({
-            duration: 1000, // Durasi animasi dalam ms
-            once: true, // Jalankan animasi hanya sekali
+    // JavaScript to switch between tabs and show the correct tab content
+    document.querySelectorAll('.tab').forEach((tab) => {
+        tab.addEventListener('change', (e) => {
+            // console.log(e.target.id);
+            
+            const tabId = e.target.id.split('-')[1] + '-' + e.target.id.split('-')[2];
+            
+            document.querySelectorAll('.tabpanel').forEach((panel) => {
+                
+                panel.classList.add('hidden');
+            });
+            document.getElementById(tabId).classList.remove('hidden');
         });
     });
 </script>
-<script type="module">
-    import KeenSlider from 'https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/+esm'
-  
-    const catalogueSlider = new KeenSlider(
-    '#catalogue-slider',
-        {
-            loop: true,
-            slides: {
-                perView: 4, // Tampilkan satu gambar per layar penuh
-                spacing: 0, // Tanpa jarak antar slide
-            },
-            breakpoints: {
-                // untuk layar mobile
-                '(max-width: 639px)': { // Untuk layar tablet
-                    slides: {
-                    perView: 2, // Tampilkan 2 gambar
-                    spacing: 0,
-                    },
-                },
-                '(min-width: 640px)': { // Untuk layar tablet
-                    slides: {
-                    perView: 2, // Tampilkan 2 gambar
-                    spacing: 0,
-                    },
-                },
-                '(min-width: 1024px)': { // Untuk layar desktop
-                    slides: {
-                    perView: 4, // Tampilkan 4 gambar
-                    spacing: 0,
-                    },
-                },
-            },
-        }
-    );
+<script>
+    const container = document.getElementById('product-container');
+    const products = [ 
+        'Costumer Focus',
+        'Integrity & Honesty',
+        'Passion for Excelent',
+        'Accountability',
+        'Respect & Recognition',
+        'Social Responsibility'
+    ];
+    products.forEach(element => {
+        container.innerHTML += `
+            <div class="mx-[40px] w-[75%] md:w-[50%] lg:w-full">
+                <div class="relative rounded-lg shadow-xl p-6 bg-white">
+                    <!-- Background image -->
+                    <div class="absolute top-0 left-0 w-full h-5">
+                        <img src="../public/assets/img/bg-our-product.png" alt="Background" class="w-full object-cover rounded-lg">
+                    </div>
 
-    const testimonySlider = new KeenSlider(
-      '#testimony-slider',
-      {
-        loop: true,
-        slides: {
-          origin: 'center',
-          perView: 1.25,
-          spacing: 80,
-        },
-        breakpoints: {
-          '(min-width: 1024px)': {
-            slides: {
-              origin: 'auto',
-              perView: 1.5,
-              spacing: 80,
-            },
-          },
-        },
-      },
-    )
+                    <!-- Skewed white background -->
+                    <div class="absolute left-0 w-full bg-white z-10 top-[322px] h-[26%] skew-y-[6deg] lg:top-[303px] lg:h-[26%] lg:skew-y-[6deg] md:top-[53%] md:h-[26%] md:skew-y-[6deg]"></div>
 
-    const informationSlider = new KeenSlider(
-      '#testimony-slider',
-      {
-        loop: true,
-        slides: {
-          origin: 'center',
-          perView: 1.25,
-          spacing: 80,
-        },
-        breakpoints: {
-          '(min-width: 1024px)': {
-            slides: {
-              origin: 'auto',
-              perView: 1.5,
-              spacing: 80,
-            },
-          },
-        },
-      },
-    )
-  
-    const catalogueSliderPrevious = document.getElementById('catalogue-slider-previous')
-    const catalogueSliderNext = document.getElementById('catalogue-slider-next')
-  
-    catalogueSliderPrevious.addEventListener('click', () => catalogueSlider.prev())
-    catalogueSliderNext.addEventListener('click', () => catalogueSlider.next())
+                    <!-- Product image -->
+                    <div class="relative z-5">
+                        <img src="../public/assets/img/our-product-1.png" alt="Product 1" class="mx-auto w-full h-auto">
+                    </div>
 
-    const testimonySliderPrevious = document.getElementById('testimony-slider-previous')
-    const testimonySliderNext = document.getElementById('testimony-slider-next')
-  
-    const testimonySliderPreviousDesktop = document.getElementById('testimony-slider-previous-desktop')
-    const testimonySliderNextDesktop = document.getElementById('testimony-slider-next-desktop')
-
-    testimonySliderPrevious.addEventListener('click', () => testimonySlider.prev())
-    testimonySliderNext.addEventListener('click', () => testimonySlider.next())
-  
-    testimonySliderPreviousDesktop.addEventListener('click', () => testimonySlider.prev())
-    testimonySliderNextDesktop.addEventListener('click', () => testimonySlider.next())
-
-    const informationSliderPrevious = document.getElementById('information-slider-previous')
-    const informationSliderNext = document.getElementById('information-slider-next')
-  
-    const informationSliderPreviousDesktop = document.getElementById('information-slider-previous-desktop')
-    const informationSliderNextDesktop = document.getElementById('information-slider-next-desktop')
-
-    informationSliderPrevious.addEventListener('click', () => informationSlider.prev())
-    informationSliderNext.addEventListener('click', () => informationSlider.next())
-  
-    informationSliderPreviousDesktop.addEventListener('click', () => informationSlider.prev())
-    informationSliderNextDesktop.addEventListener('click', () => informationSlider.next())
-  </script>
+                    <!-- Content -->
+                    <div class="text-left relative z-20 px-5">
+                        <h2 class="text-lg md:text-xl lg:text-2xl font-semibold py-3">${element}</h2>
+                    </div>
+                </div>
+            </div>`;
+    });
+</script>
+<!-- TW Elements JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
 </html>

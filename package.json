@@ -18,6 +18,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.0",
     "tailwind-fontawesome": "^0.7.1",
-    "tailwindcss-plugin-icons": "^2.2.2"
+    "tailwindcss-plugin-icons": "^2.2.2",
+    "tw-elements": "^2.0.0"
   }
 }
