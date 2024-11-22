@@ -20,6 +20,12 @@
     <!-- Tailwind Style -->
     <link rel="stylesheet" href="../dist/tailwind.css">
 
+    <style>
+        #product-container > div:nth-last-child(-n+2) {
+    justify-self: center;
+}
+    </style>
+
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>    
@@ -129,445 +135,291 @@
         <div class="absolute inset-0 flex flex-col justify-center items-center lg:items-start space-y-4 z-10 px-16 container mx-auto top-[63px]">
             <!-- Heading -->
             <h1 class="text-white font-bold text-3xl md:text-6xl lg:text-6xl xl:text-7xl py-2 md:py-6 lg:py-10 leading-tight">
-                About Us
+                Boards
             </h1>
-        </div>
-    </section>
-    
-    <!-- Company Profile -->
-    <section class="relative">
-        <img src="../public/assets/img/bg-about-company-profile.png" alt="Background" class="absolute inset-0 h-full object-cover z-0" />
-        <div class="container max-w-full sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1400px] mx-auto py-20 relative flex items-center justify-center">
-            <div class="grid grid-cols-12 w-full">
-                <div class="col-span-12 lg:col-span-4">
-                    <h1 class="text-4xl md:text-4xl lg:text-5xl font-semibold py-4 md:py-6 lg:py-8 text-center md:text-center lg:text-left">
-                        Company <span class="block w-full h-[0.3rem] md:h-[0.6rem] lg:h-[1rem]"></span> Profile
-                    </h1>                                        
-                </div>
-                <!-- Konten About Us -->
-                <div class="col-span-12 lg:col-span-8 px-12 md:px-0 lg:px-0">
-                    <span class="block text-lg md:text-xl lg:text-xl font-medium md:font-medium lg:font-normal py-4 md:py-6 lg:py-8 !leading-9 text-center md:text-center lg:text-left">
-                        Established on April 19, 1971, PT Voksel Electric Tbk. (“the Company”) is engaged in cable industry. In 1989, the Company changed the status into a foreign capital investment through a joint venture agreement with Showa Electric Wire & Cable Co. Ltd. (“Showa”), a prominent cable company in Japan that has changed its name into SWCC Showa Cable Systems Co. Ltd. since 2006. In line with the rapid development of cable industry and more aggressive strategic growth, the Company held its initial public offering on the Jakarta Stock Exchange (now is the Indonesia Stock Exchange) and Surabaya Stock Exchange on December 20, 1990. With preservation and dedication from all the Company’s management and staff, the Company successfully positioning itself as one of the leading cable manufacturers in Indonesia. The Company’s core businesses include manufacturing of power, telecommunication, and fiber optic cables.
-                    </span>
-                    <span class="block text-lg md:text-xl lg:text-xl font-medium md:font-medium lg:font-normal py-4 md:py-6 lg:py-8 !leading-9 text-center md:text-center lg:text-left">
-                        Through its continuous pursuit for quality excellence, the Company was awarded numerous international quality certificates, such as ISO 9001:2015 from SGS Yarsley International Certification Services, Ltd. The Company is highly committed to prevent environmental pollution and enhance the safety and health in the working environment. In line with this commitment, the Company has obtained ISO 14001:2015 and ISO- 45001:2015. from SGS Yarsley International Certification Services, Ltd. The Company also obtained SMK3 certificate in 2018. Besides, the Company obtained KEMA Certificate from KEMA Nederland B.V. and TUV certificates. At the beginning of 2016, the Company participated in development and research related to new products that will be launched in the following years. The company is also expanding by adding business lines for high voltage. In 2020, the Company began to expand capacity and production area for this product, and in 2023, a 42.97% stake was taken over by Hengtong Optic-Electric International Co., Ltd.
-                    </span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Company Profile 2 -->
-    <section class="relative h-[900px]">
-        <img src="../public/assets/img/bg-about-company-profile-2.png" alt="Background" class="absolute inset-0 w-full h-full object-cover z-0" />
-        <div class="container max-w-full sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1400px] mx-auto h-full flex items-center justify-center relative z-10">
-            <div class="grid grid-cols-12 w-full">
-                <div class="col-span-12 lg:col-span-6 px-12 md:px-0 lg:px-0">
-                    <span class="block text-white text-lg md:text-xl lg:text-xl font-medium md:font-medium lg:font-normal py-4 md:py-6 lg:py-8 !leading-9 text-center md:text-center lg:text-left">
-                        The Company markets its products both domestically and internationally. For domestic market, majority sales stems from PT Perusahaan Listrik Negara ("PLN') and PT Telekomunikasi Indonesia Tbk ("Telkom'). In addition, the Company also supplies free market cables to contractors and distributors.
-                    </span>
-                    <span class="block text-white text-lg md:text-xl lg:text-xl font-medium md:font-medium lg:font-normal py-4 md:py-6 lg:py-8 !leading-9 text-center md:text-center lg:text-left">
-                        For export sales, the Company markets to various countries such as: Singapore, Malaysia, Timor Leste, Philippines, Thailand, Vietnam, Cambodia, Myanmar, Nepal, Bhutan, India, Sri Lanka, Bangladesh, Pakistan, Afganistan, UAE, Yemen, Saudi Arabia, Qatar, Lebanon, Iraq, Jordan, Egypt, Japan, South of Korea, Australia, Panama, Brazil, Kenya, Tanzania, DR of Congo, Rep of Congo, Nigeria, Ethiopia, Mozambique, Uganda, Eritrea, Malta, Mauritius, Cyprus, Seychelles, Liberia, Haiti, Suriname, Palestina, Hong Kong, Taiwan, China, Samoa, Chile, Ecuador, Brunei, Gabon, Ghana, Angola, Ivorycoast, Burundi, Rwanda, Madagascar.
-                    </span>
-                </div>
-            </div>
         </div>
     </section>
 
     <!-- Complete List (kurang responsive) -->
-    <section class="relative">
-        <div class="container max-w-full sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1400px] mx-auto py-12 text-left">
-            <div class="grid grid-cols-12 gap-6" x-data="{ openTab: 1 }">
+    <section class="relative h-auto">
+        <!-- Background Image -->
+        <div class="absolute inset-0 w-full h-full z-0">
+            <img 
+                src="../public/assets/img/bg-board-commisioner.png" 
+                alt="Background" 
+                class="w-full h-full object-cover"
+            />
+        </div>
+        
+        <!-- Content -->
+        <div class="relative container max-w-full sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1400px] mx-auto py-20 flex items-center justify-center">
+            <div class="grid grid-cols-12 gap-6" x-data="{ tabs: 2, openTab: 1 }">
                 <!-- Judul dan Deskripsi -->
-                <div class="col-span-12 lg:col-span-5 px-7">
+                <div class="col-span-12 lg:col-span-5 px-7 z-10">
                     <h1 class="text-4xl md:text-4xl lg:text-5xl font-semibold py-4 md:py-6 lg:py-8">
-                        Complete List of Our <span class="block w-full h-[0.3rem] md:h-[0.6rem] lg:h-[1rem]"></span> Cable Line Up
-                    </h1>  
+                        Meet Our Board of <span class="block w-full h-[0.3rem] md:h-[0.6rem] lg:h-[1rem]"></span> Commissioners
+                    </h1>
                 </div>
-                <div class="hidden lg:block lg:col-span-1"></div>
-                <div class="col-span-12 lg:lg:col-span-6 mx-auto px-7">
+                <div class="hidden lg:block lg:col-span-1 z-10"></div>
+                <div class="col-span-12 lg:lg:col-span-6 mx-auto px-7 z-10">
                     <span class="block text-lg md:text-xl lg:text-xl font-medium md:font-medium lg:font-normal py-4 md:py-6 lg:py-8 !leading-9">
-                        Bibendum iaculis amet a feugiat interdum. Non sed lectus in curabitur ullamcorper enim velit senectus proin. Etiam nulla pellentesque metus nullam eu id purus. Scelerisque.
+                        Based on the Resolution of the Annual General Meeting of Shareholders of PT Voksel Electric Tbk dated June 25, 2024, the composition of the Board of Commissioners is as follows:
                     </span>
                 </div>
-
-                <div class="col-span-12 px-7">
+        
+                <!-- Tabs -->
+                <div class="col-span-12 px-7 z-10">
                     <div class="border-b border-gray-200">
-                        <nav class="-mb-px flex gap-6 justify-between" aria-label="Tabs">
+                        <nav 
+                            class="-mb-px flex justify-evenly" 
+                            aria-label="Tabs"
+                            :class="{ 'gap-0': tabs >= 2 }"
+                        >
                             <!-- Tab 1 -->
                             <label 
-                                for="tab-bare-copper" 
+                                for="tab-1" 
                                 x-on:click="openTab = 1" 
                                 :class="{ 
                                     'border-blue-500 text-black': openTab === 1, 
                                     'hover:border-blue-500 hover:text-black hover:font-bold': openTab !== 1 
                                 }" 
-                                class="lg:inline-flex items-center gap-2 border-b-8 border-transparent px-1 pb-4 text-sm font-medium text-gray-500 cursor-pointer"
-                            >
-                                <h1 class="font-extrabold opacity-15 text-medium lg:text-5xl">01</h1>
-                                <span class="text-sm lg:text-2xl" :class="{ 'font-bold text-black': openTab === 1 }">
-                                    Bare Copper <br> Conductor
-                                </span>
+                                class="flex flex-col items-center justify-center gap-2 border-b-8 border-transparent px-4 pb-2 text-sm font-medium text-gray-500 cursor-pointer transition-all duration-200 ease-in-out text-center"
+                                :style="'width: ' + (100 / tabs) + '%'">
+                                <div class="flex">
+                                    <div class="flex justify-center items-center">
+                                        <img src="../public/assets/icons/star-icon.png" alt="" class="w-6 h-6 mr-3">
+                                    </div>
+                                    <span class="text-sm lg:text-2xl" :class="{ 'font-bold text-black': openTab === 1 }">
+                                        Board of Commissioners
+                                    </span>
+                                </div>
                             </label>
-                        
+        
                             <!-- Tab 2 -->
                             <label 
-                                for="tab-bare-aluminium" 
+                                for="tab-2" 
                                 x-on:click="openTab = 2" 
                                 :class="{ 
                                     'border-blue-500 text-black': openTab === 2, 
                                     'hover:border-blue-500 hover:text-black hover:font-bold': openTab !== 2 
                                 }" 
-                                class="lg:inline-flex items-center gap-2 border-b-8 border-transparent px-1 pb-4 text-sm font-medium text-gray-500 cursor-pointer"
-                            >
-                                <h1 class="font-extrabold opacity-15 text-medium lg:text-5xl">02</h1>
-                                <span class="text-sm lg:text-2xl" :class="{ 'font-bold text-black': openTab === 2 }">
-                                    Bare Aluminum <br> Conductor
-                                </span>
-                            </label>
-                        
-                            <!-- Tab 3 -->
-                            <label 
-                                for="tab-power-control" 
-                                x-on:click="openTab = 3" 
-                                :class="{ 
-                                    'border-blue-500 text-black': openTab === 3, 
-                                    'hover:border-blue-500 hover:text-black hover:font-bold': openTab !== 3 
-                                }" 
-                                class="lg:inline-flex items-center gap-2 border-b-8 border-transparent px-1 pb-4 text-sm font-medium text-gray-500 cursor-pointer"
-                            >
-                                <h1 class="font-extrabold opacity-15 text-medium lg:text-5xl">03</h1>
-                                <span class="text-sm lg:text-2xl" :class="{ 'font-bold text-black': openTab === 3 }">
-                                    Power & Control <br> Cable
-                                </span>
-                            </label>
-                        
-                            <!-- Tab 4 -->
-                            <label 
-                                for="tab-optical-fiber" 
-                                x-on:click="openTab = 4" 
-                                :class="{ 
-                                    'border-blue-500 text-black': openTab === 4, 
-                                    'hover:border-blue-500 hover:text-black hover:font-bold': openTab !== 4 
-                                }" 
-                                class="lg:inline-flex items-center gap-2 border-b-8 border-transparent px-1 pb-4 text-sm font-medium text-gray-500 cursor-pointer"
-                            >
-                                <h1 class="font-extrabold opacity-15 text-medium lg:text-5xl">04</h1>
-                                <span class="text-sm lg:text-2xl" :class="{ 'font-bold text-black': openTab === 4 }">
-                                    Optical Fiber <br> Cable
-                                </span>
+                                class="flex flex-col items-center justify-end gap-2 border-b-8 border-transparent px-4 pb-2 text-sm font-medium text-gray-500 cursor-pointer transition-all duration-200 ease-in-out text-center"
+                                :style="'width: ' + (100 / tabs) + '%'">
+                                <div class="flex">
+                                    <div class="flex justify-center items-center">
+                                        <img src="../public/assets/icons/star-icon-2.png" alt="" class="w-6 h-6 mr-3">
+                                    </div>
+                                    <span class="text-sm lg:text-2xl" :class="{ 'font-bold text-black': openTab === 2 }">
+                                        Board of Directors
+                                    </span>
+                                </div>
                             </label>
                         </nav>
-                        
                     </div>
                 </div>
-                
+        
                 <!-- Tab content sections -->
-                <div x-show="openTab === 1" class="transition-all duration-300 col-span-12">
-                    <div class="grid grid-cols-12 px-7">
-                        <div class="col-span-5 lg:col-span-5 lg:block lg:w-full">
-                            <img src="../public/assets/img/img-about-us.png" class="w-full h-auto" alt="About Us Image">
-                        </div>
-                        <div class="col-span-1"></div>
-                        <div class="col-span-6 lg:col-span-6">
-                            <ul class="list-disc pl-6 space-y-2">
-                                <li class="text-lg">All Aluminum Conductor (AAC)</li>
-                                <li class="text-lg">All Aluminum Alloy Conductor (AAAC)</li>
-                                <li class="text-lg">Thermal Aluminum (TAL)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div x-show="openTab === 2" class="transition-all duration-300 col-span-12">
-                    <div class="grid grid-cols-12 px-7">
-                        <div class="col-span-5 lg:col-span-5 lg:block lg:w-full">
-                            <img src="../public/assets/img/img-about-us.png" class="w-full h-auto" alt="About Us Image">
-                        </div>
-                        <div class="col-span-1"></div>
-                        <div class="col-span-6 lg:col-span-6">
-                            <ul class="list-disc pl-6 space-y-2">
-                                <li class="text-lg">Hard Drawn Aluminum (HAL)</li>
-                                <li class="text-lg">Steel Reinforced (ACSR)</li>
-                                <li class="text-lg">Aluminum Conductor</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div x-show="openTab === 3" class="transition-all duration-300 col-span-12">
-                    <div class="grid grid-cols-12 px-7">
-                        <div class="col-span-5 lg:col-span-5 lg:block lg:w-full">
-                            <img src="../public/assets/img/img-about-us.png" class="w-full h-auto" alt="About Us Image">
-                        </div>
-                        <div class="col-span-1"></div>
-                        <div class="col-span-6 lg:col-span-6">
-                            <ul class="list-disc pl-6 space-y-2">
-                                <li class="text-lg">Aluminum Clad-Steel Reinforced (ACSR/AS)</li>
-                                <li class="text-lg">Thermal-Aluminum Conductor Steel Reinforced (T-ACSR)</li>
-                                <li class="text-lg">Thermal Resistant Aluminum Alloy</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div x-show="openTab === 4" class="transition-all duration-300 col-span-12">
-                    <div class="grid grid-cols-12 px-7">
-                        <div class="col-span-5 lg:col-span-5 lg:block lg:w-full">
-                            <img src="../public/assets/img/img-about-us.png" class="w-full h-auto" alt="About Us Image">
-                        </div>
-                        <div class="col-span-1"></div>
-                        <div class="col-span-6 lg:col-span-6">
-                            <ul class="list-disc pl-6 space-y-2">
-                                <li class="text-lg">Aluminum Clad-Steel Reinforced (T-ACSR/AS)</li>
-                                <li class="text-lg">Aluminum Conductor Composite Core (ACCC)</li>
-                                <li class="text-lg">Optical Ground Wire (OPGW)</li>
-                                <li class="text-lg">Galvanized Steel Wire (GSW)</li>
-                                <li class="text-lg">Aluminum Clad Steel Wire (AS)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                <div x-show="openTab === 1" class="transition-all duration-300 col-span-12 z-10">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 w-full justify-items-center"  id="commissioners-container" 
+                        x-data="{ openModal: false, selectedCard: { name: '', position: '', img: '', description: ''} }">
+                        <!-- Modal -->
+                        <div 
+                            x-show="openModal" 
+                            x-transition:enter="ease-out duration-300" 
+                            x-transition:enter-start="opacity-0"
+                            x-transition:enter-end="opacity-100" 
+                            x-transition:leave="ease-in duration-200" 
+                            x-transition:leave-start="opacity-100" 
+                            x-transition:leave-end="opacity-0"
+                            class="fixed inset-0 z-50 flex items-center justify-center"
+                        >
+                            <!-- Modal Background -->
+                            <div 
+                                class="absolute inset-0 bg-gray-600 bg-opacity-75" 
+                                @click="openModal = false; selectedCard = { name: '', position: '', img: '', description: '' }"
+                            ></div>
 
-    <!-- Company Outline -->
-    <section class="relative h-[800px] lg:h-[700px]">
-        <!-- Gambar Latar Belakang -->
-        <img src="../public/assets/img/bg-company-outline.png" alt="Background" class="absolute inset-0 w-full h-full object-cover z-0" />
-        <div class="container max-w-full sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1400px] mx-auto h-full flex items-center justify-center relative z-10">
-            <div class="grid grid-cols-12 w-full">
-                <div class="col-span-12 lg:col-span-5 flex items-center px-7">
-                    <div class="grid-cols-12">
-                        <h1 class="text-4xl md:text-4xl lg:text-5xl font-semibold py-4 md:py-6">
-                            Company <span class="block w-full h-[0.3rem] md:h-[0.6rem] lg:h-[1rem]"></span> Outline
-                        </h1>  
-                        <span class="block text-lg md:text-xl lg:text-xl font-medium md:font-medium lg:font-normal py-4 md:py-6 lg:py-8 !leading-9">
-                            Through its continuous pursuit for quality excellence, the Company was awarded numerous international quality certificates, such as ISO 9001:2015 from SGS Yarsley International Certification Services, Ltd.
-                        </span>
-                    </div>
-                </div>
-                <div class="hidden lg:block col-span-1"></div>
-                <!-- Gambar About Us (Hanya Muncul di Layar Besar) -->
-                <div class="col-span-12 lg:col-span-6 px-7">
-                    <div class="grid grid-cols-2 gap-6">
-                        <div class="h-44 rounded-2xl bg-white shadow-lg p-6 flex flex-col items-start">
-                            <img src="../public/assets/icons/circle-star.svg" alt="" srcset="">
-                            <h5 class="font-semibold text-lg py-3">Establishment</h5>
-                            <span>April 19, 1971</span>
-                        </div>
-                        <div class="h-44 rounded-2xl bg-white shadow-lg p-6 flex flex-col items-start">
-                            <img src="../public/assets/icons/circle-star.svg" alt="" srcset="">
-                            <h5 class="font-semibold text-lg py-3">Establishment</h5>
-                            <span>April 19, 1971</span>
-                        </div>
-                        <div class="h-44 rounded-2xl bg-white shadow-lg p-6 flex flex-col items-start">
-                            <img src="../public/assets/icons/circle-star.svg" alt="" srcset="">
-                            <h5 class="font-semibold text-lg py-3">Establishment</h5>
-                            <span>April 19, 1971</span>
-                        </div>
-                        <div class="h-44 rounded-2xl bg-white shadow-lg p-6 flex flex-col items-start">
-                            <img src="../public/assets/icons/circle-star.svg" alt="" srcset="">
-                            <h5 class="font-semibold text-lg py-3">Establishment</h5>
-                            <span>April 19, 1971</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                            <!-- Modal Content -->
+                            <div 
+                                class="relative bg-white rounded-lg shadow-xl max-w-lg text-center z-999 p-6"
+                            >
+                                <!-- Image, Name, and Position in One Row -->
+                                <div class="flex items-center mb-6">
+                                    <img :src="selectedCard.img" alt="Modal Image" class="w-20 h-20 object-cover rounded-full mr-4">
+                                    <div class="flex flex-col items-start">
+                                        <h3 class="text-2xl font-bold text-gray-800 mb-2" x-text="selectedCard.name"></h3>
+                                        <p class="text-lg text-gray-600" x-text="selectedCard.position"></p>
+                                    </div>
+                                </div>
 
-    <!-- Our History -->
-    <section class="relative h-[900px]">
-        <img src="../public/assets/img/bg-our-history.png" alt="Background" class="absolute inset-0 w-full h-full object-cover z-0" />
-        <div class="container max-w-full sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1400px] mx-auto h-full flex items-center justify-center relative z-10">
-            <div class="grid grid-cols-12 w-full">
-                <div class="col-span-12 lg:col-span-12 flex items-center justify-center px-7">
-                    <div class="grid-cols-12 py-5 lg:py-0">
-                        <div class="col-span-12 flex items-center justify-center"">
-                            <button class="bg-white bg-opacity-15 px-3 py-2 text-white mb-4 rounded-3xl">OUR HISTORY</button>
-                        </div>
-                        <div class="col-span-12 flex items-center justify-center"">
-                            <h1 class="text-4xl md:text-4xl lg:text-5xl font-semibold py-4 md:py-6 text-white">
-                                A Historical Overview of Voksel Electric
-                            </h1> 
-                        </div>
-                        <div class="col-span-12 flex items-center justify-center"">
-                            <span class="block text-lg md:text-xl lg:text-xl font-medium md:font-medium lg:font-normal py-4 md:py-6 lg:py-8 !leading-9">
-                                Through its continuous pursuit for quality excellence, the Company was awarded numerous international quality certificates, such as ISO 9001:2015 from SGS Yarsley International Certification Services, Ltd.
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                                <!-- Description Below Image and Name -->
+                                <p class="text-gray-600 text-base leading-relaxed mb-6 text-left" x-text="selectedCard.description"></p>
 
-    <!-- Our Vision -->
-    <section class="relative bg-white">
-        <div class="container max-w-full sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1400px] mx-auto py-20 relative flex items-center justify-center">
-            <div class="grid grid-cols-12 w-full">
-                <div class="col-span-12 lg:col-span-6 px-7">
-                    <div class="flex justify-center lg:justify-left">
-                        <img src="../public/assets/img/img-our-vision.png" class="w-[75%] h-auto" alt="About Us Image">
-                    </div>
-                </div>
-                <div class="hidden lg:block col-span-1"></div>
-                <div class="col-span-12 lg:col-span-5 flex items-center justify-center px-7">
-                    <div class="grid-cols-12 py-5 lg:py-0">
-                        <div class="col-span-12 flex items-center justify-center lg:items-start lg:justify-start"">
-                            <button class="bg-voksel-blue bg-opacity-15 px-3 py-2 text-voksel-blue mb-4 rounded-3xl">OUR VISION</button>
-                        </div>
-                        <div class="col-span-12 flex items-center justify-center lg:items-start lg:justify-start"">
-                            <h1 class="col-span-12 text-5xl md:text-6xl lg:text-6xl italic font-bold py-4">
-                                VISION
-                            </h1>
-                        </div>
-                        <div class="col-span-12 flex items-center justify-center lg:items-start lg:justify-start"">
-                            <span class="block text-2xl md:text-4xl lg:text-4xl italic font-semibold py-4 md:py-6 lg:py-8 text-center lg:text-left">
-                                To be a World Class Total Cable Solution Provider in Indonesia
-                            </span>
+                                <!-- Close Button -->
+                                <div class="flex justify-center gap-x-4">
+                                    <button 
+                                        @click="openModal = false; selectedCard = { name: '', position: '', img: '', description: '' }" 
+                                        type="button" 
+                                        class="py-2.5 px-6 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm"
+                                    >
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+                <div x-show="openTab === 2" class="transition-all duration-300 col-span-12 z-10">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 w-full justify-items-center"  id="directors-container" 
+                        x-data="{ openModal: false, selectedCard: { name: '', position: '', img: '', description: ''} }">
+                        <!-- Modal -->
+                        <div 
+                            x-show="openModal" 
+                            x-transition:enter="ease-out duration-300" 
+                            x-transition:enter-start="opacity-0"
+                            x-transition:enter-end="opacity-100" 
+                            x-transition:leave="ease-in duration-200" 
+                            x-transition:leave-start="opacity-100" 
+                            x-transition:leave-end="opacity-0"
+                            class="fixed inset-0 z-50 flex items-center justify-center"
+                        >
+                            <!-- Modal Background -->
+                            <div 
+                                class="absolute inset-0 bg-gray-600 bg-opacity-75" 
+                                @click="openModal = false; selectedCard = { name: '', position: '', img: '', description: '' }"
+                            ></div>
 
-    <!-- Our Mission -->
-    <section class="relative bg-white">
-        <div class="container max-w-full sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1400px] mx-auto py-20 relative flex items-center justify-center">
-            <div class="grid grid-cols-12 w-full">
-                <div class="col-span-12 lg:col-span-6 px-7 block md:block lg:hidden">
-                    <div class="flex justify-center lg:justify-left">
-                        <img src="../public/assets/img/img-our-mission.png" class="w-[75%] h-auto" alt="About Us Image">
-                    </div>
-                </div>
-                <div class="col-span-12 lg:col-span-5 flex items-center justify-center px-7">
-                    <div class="grid-cols-12 py-5 lg:py-0">
-                        <div class="col-span-12 flex items-center justify-center lg:items-start lg:justify-start">
-                            <button class="bg-voksel-blue bg-opacity-15 px-3 py-2 text-voksel-blue mb-4 rounded-3xl">OUR OUR MISSION</button>
-                        </div>
-                        <div class="col-span-12 flex items-center justify-center lg:items-start lg:justify-start"">
-                            <h1 class="col-span-12 text-5xl md:text-6xl lg:text-6xl italic font-bold py-4">
-                                MISSION
-                            </h1>
-                        </div>
-                        <div class="col-span-12 flex items-center justify-center lg:items-start lg:justify-start"">
-                            <span class="block text-2xl md:text-4xl lg:text-4xl italic font-semibold py-4 md:py-6 lg:py-8 text-center lg:text-left">
-                                To Contribute National Growth and Optimize Corporate Values through Superior Solutions and Sustainable Social Responsibility.
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="hidden lg:block col-span-1"></div>
-                <div class="col-span-12 lg:col-span-6 px-7 hidden md:hidden lg:block">
-                    <div class="flex justify-center lg:justify-left">
-                        <img src="../public/assets/img/img-our-mission.png" class="w-[75%] h-auto" alt="About Us Image">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                            <!-- Modal Content -->
+                            <div 
+                                class="relative bg-white rounded-lg shadow-xl max-w-lg text-center z-999 p-6"
+                            >
+                                <!-- Image, Name, and Position in One Row -->
+                                <div class="flex items-center mb-6">
+                                    <img :src="selectedCard.img" alt="Modal Image" class="w-20 h-20 object-cover rounded-full mr-4">
+                                    <div class="flex flex-col items-start">
+                                        <h3 class="text-2xl font-bold text-gray-800 mb-2" x-text="selectedCard.name"></h3>
+                                        <p class="text-lg text-gray-600" x-text="selectedCard.position"></p>
+                                    </div>
+                                </div>
 
-    <!-- Empowering -->
-    <section class="relative h-[900px]">
-        <img src="../public/assets/img/bg-empowering.png" alt="Background" class="absolute inset-0 w-full h-full object-cover z-0" />
-        <div class="container max-w-full sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1400px] mx-auto h-full flex items-center justify-center relative z-10">
-            <div class="grid grid-cols-12 w-full">
-                <div class="hidden lg:block lg:col-span-5"></div>
-                <div class="col-span-12 lg:col-span-7 px-12 md:px-0 lg:px-0">
-                    <h1 class="text-4xl md:text-4xl lg:text-5xl font-semibold py-4 md:py-6 lg:py-8 text-white text-center lg:text-left">
-                        Empowering Growth Through Quality and Responsibility
-                    </h1>    
-                    <span class="block text-white text-lg md:text-xl lg:text-xl font-medium md:font-medium lg:font-normal py-4 md:py-6 lg:py-8 !leading-9 text-center md:text-center lg:text-left">
-                        We aim to strengthen our position as a leading cable manufacturer by providing more advanced technology premium cables with quality supporting products and installation solution services. In order to develop sustainable growth, healthy profits and competent Voksel employees, our high integrity employees have to contribute and help us build a better community together. 
-                    </span>
-                    <span class="block text-white text-lg md:text-xl lg:text-xl font-medium md:font-medium lg:font-normal py-4 md:py-6 lg:py-8 !leading-9 text-center md:text-center lg:text-left">
-                        We also perceive the importance of being involved in having Sustainable Social Responsibility to contribute in maintaining economic, financial, social and environmental sustainability in order to contribute to the national growth.
-                    </span>
-                </div>
-            </div>
-        </div>
-    </section>
+                                <!-- Description Below Image and Name -->
+                                <p class="text-gray-600 text-base leading-relaxed mb-6 text-left" x-text="selectedCard.description"></p>
 
-    <!-- Values -->
-    <section class="relative h-auto lg:h-[900px]">
-        <!-- Background Image -->
-        <img src="../public/assets/img/bg-principles.png" alt="Background" class="absolute inset-0 w-full h-full object-cover z-0">
-    
-        <!-- Content Container -->
-        <div class="container max-w-[1400px] mx-auto h-full flex flex-col items-center justify-center relative z-10 px-4">
-            
-            <!-- Header Content -->
-            <div class="text-center">
-                <button class="bg-voksel-blue bg-opacity-15 px-4 py-2 text-voksel-blue mb-4 rounded-3xl">
-                    VALUES
-                </button>
-                <h1 class="text-3xl md:text-4xl lg:text-5xl font-semibold py-4 md:py-6">
-                    The Principles That We Consistently Uphold and Adhere To
-                </h1>
-                <p class="text-base md:text-lg lg:text-xl py-4 md:py-6 lg:py-8 leading-relaxed">
-                    We realize that all stakeholders are an important part of the company's progress. 
-                    We hope to achieve our new vision and mission with the full support and participation 
-                    of our local community. Together with all our employees who shall practice and uphold 
-                    <span class="font-semibold">CIPARS</span> as our business core values, we hope for all your blessings as we strive for a better future.
-                </p>
-            </div>
-    
-            <!-- Product Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-6 mt-10 w-full" id="product-container" x-data="{ openModal: false, selectedCard: { title: '', letter: '', img: '' } }">
-                <!-- Modal -->
-                <div 
-                    x-show="openModal" 
-                    x-transition:enter="ease-out duration-300" 
-                    x-transition:enter-start="opacity-0"
-                    x-transition:enter-end="opacity-100" 
-                    x-transition:leave="ease-in duration-200" 
-                    x-transition:leave-start="opacity-100" 
-                    x-transition:leave-end="opacity-0"
-                    class="fixed inset-0 z-50 flex items-center justify-center"
-                >
-                    <!-- Modal Background -->
-                    <div 
-                        class="absolute inset-0 bg-gray-600 bg-opacity-75" 
-                        @click="openModal = false; selectedCard = { title: '', letter: '', img: '' }"
-                    ></div>
-            
-                    <!-- Modal Content -->
-                    <div 
-                        x-show="openModal" 
-                        x-transition:enter="ease-out duration-300"
-                        x-transition:enter-start="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-                        x-transition:enter-end="opacity-100 translate-y-0 sm:scale-100"
-                        x-transition:leave="ease-in duration-200"
-                        x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100"
-                        x-transition:leave-end="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-                        class="relative bg-white rounded-lg shadow-xl w-80 max-w-lg text-center z-999"
-                    >
-                        <!-- Image -->
-                        <div class="mb-4">
-                            <img :src="selectedCard.img" alt="Modal Image" class="w-full h-64 object-cover rounded-t-lg">
-                        </div>
-                        
-                        <div class="p-6">
-                            <!-- Content -->
-                            <h3 class="mb-2 text-2xl font-bold text-gray-800" x-text="selectedCard.title"></h3>
-                
-                            <div class="mt-6 flex justify-center gap-x-4">
-                                <button 
-                                    @click="openModal = false; selectedCard = { title: '', letter: '', img: '', content: '' }" 
-                                    type="button" 
-                                    class="py-2.5 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm"
-                                >
-                                    Close
-                                </button>
+                                <!-- Close Button -->
+                                <div class="flex justify-center gap-x-4">
+                                    <button 
+                                        @click="openModal = false; selectedCard = { name: '', position: '', img: '', description: '' }" 
+                                        type="button" 
+                                        class="py-2.5 px-6 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm"
+                                    >
+                                        Close
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-                     
+        </div>
+        
+    </section>
+
+    <!-- Company Outline -->
+    <section class="relative h-auto lg:h-[900px]">
+        <!-- Gambar Latar Belakang -->
+        <img src="../public/assets/img/bg-schedule.png" alt="Background" class="absolute inset-0 w-full h-full object-cover z-0" />
+        <div class="container max-w-full sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1400px] mx-auto h-full flex items-center justify-center relative z-10">
+            <div class="grid grid-cols-12 w-full">
+                <div class="col-span-12 lg:col-span-5 px-7 z-10">
+                    <h1 class="text-4xl md:text-4xl lg:text-5xl font-semibold py-4 md:py-6 lg:py-8 text-white">
+                        Meeting Schedule of <span class="block w-full h-[0.3rem] md:h-[0.6rem] lg:h-[1rem]"></span> Our BOC
+                    </h1>
+                </div>
+                <div class="hidden lg:block lg:col-span-1 z-10"></div>
+                <div class="col-span-12 lg:col-span-6 mx-auto px-7 z-10">
+                    <span class="block text-lg md:text-xl lg:text-xl font-medium md:font-medium lg:font-normal py-4 md:py-6 lg:py-8 !leading-9 text-white">
+                        Bibendum iaculis amet a feugiat interdum. Non sed lectus in curabitur ullamcorper enim velit senectus proin. Etiam nulla pellentesque metus nullam eu id purus. Scelerisque.
+                    </span>
+                </div>
+                <div class="hidden lg:block col-span-1"></div>
+                <!-- Gambar About Us (Hanya Muncul di Layar Besar) -->
+                <div class="col-span-12 px-7">
+                    <div class="grid grid-cols-4 gap-6 gap-y-6 pb-5">
+                        <!-- Januari -->
+                        <div class="h-auto rounded-2xl bg-white shadow-lg p-6 flex flex-col items-start relative">
+                            <h5 class="font-bold text-2xl py-3">12 Jan 2025</h5>
+                            <span>Monthly Internal meeting with operational team</span>
+                            <div class="absolute bottom-4 right-4 text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#3E3E3E00] to-[#3E3E3E1A] opacity-100">JAN</div>
+                        </div>
+                        <div class="h-auto rounded-2xl bg-[#D9D9D9] shadow-lg p-6 flex flex-col items-start text-[#555555] relative">
+                            <h5 class="font-bold text-2xl py-3">NO SCHEDULE</h5>
+                            <span>-</span>
+                            <div class="absolute bottom-4 right-4 text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#3E3E3E00] to-[#3E3E3E1A] opacity-100">FEB</div>
+                        </div>
+                        <div class="h-auto rounded-2xl bg-white shadow-lg p-6 flex flex-col items-start relative">
+                            <h5 class="font-bold text-2xl py-3">12 Jan 2025</h5>
+                            <span>Monthly Internal meeting with operational team</span>
+                            <div class="absolute bottom-4 right-4 text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#3E3E3E00] to-[#3E3E3E1A] opacity-100">MAR</div>
+                        </div>
+                        <div class="h-auto rounded-2xl bg-[#D9D9D9] shadow-lg p-6 flex flex-col items-start text-[#555555] relative">
+                            <h5 class="font-bold text-2xl py-3">NO SCHEDULE</h5>
+                            <span>-</span>
+                            <div class="absolute bottom-4 right-4 text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#3E3E3E00] to-[#3E3E3E1A] opacity-100">APR</div>
+                        </div>
+                    </div>
+                
+                    <div class="grid grid-cols-4 gap-6 gap-y-6 pb-5">
+                        <!-- Februari -->
+                        <div class="h-auto rounded-2xl bg-white shadow-lg p-6 flex flex-col items-start relative">
+                            <h5 class="font-bold text-2xl py-3">12 Feb 2025</h5>
+                            <span>Monthly Internal meeting with operational team</span>
+                            <div class="absolute bottom-4 right-4 text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#3E3E3E00] to-[#3E3E3E1A] opacity-100">MEI</div>
+                        </div>
+                        <div class="h-auto rounded-2xl bg-[#D9D9D9] shadow-lg p-6 flex flex-col items-start text-[#555555] relative">
+                            <h5 class="font-bold text-2xl py-3">NO SCHEDULE</h5>
+                            <span>-</span>
+                            <div class="absolute bottom-4 right-4 text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#3E3E3E00] to-[#3E3E3E1A] opacity-100">JUN</div>
+                        </div>
+                        <div class="h-auto rounded-2xl bg-white shadow-lg p-6 flex flex-col items-start relative">
+                            <h5 class="font-bold text-2xl py-3">12 Feb 2025</h5>
+                            <span>Monthly Internal meeting with operational team</span>
+                            <div class="absolute bottom-4 right-4 text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#3E3E3E00] to-[#3E3E3E1A] opacity-100">JUL</div>
+                        </div>
+                        <div class="h-auto rounded-2xl bg-[#D9D9D9] shadow-lg p-6 flex flex-col items-start text-[#555555] relative">
+                            <h5 class="font-bold text-2xl py-3">NO SCHEDULE</h5>
+                            <span>-</span>
+                            <div class="absolute bottom-4 right-4 text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#3E3E3E00] to-[#3E3E3E1A] opacity-100">AUG</div>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-4 gap-6 gap-y-6 pb-5">
+                        <!-- Februari -->
+                        <div class="h-auto rounded-2xl bg-white shadow-lg p-6 flex flex-col items-start relative">
+                            <h5 class="font-bold text-2xl py-3">12 Feb 2025</h5>
+                            <span>Monthly Internal meeting with operational team</span>
+                            <div class="absolute bottom-4 right-4 text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#3E3E3E00] to-[#3E3E3E1A] opacity-100">SEP</div>
+                        </div>
+                        <div class="h-auto rounded-2xl bg-[#D9D9D9] shadow-lg p-6 flex flex-col items-start text-[#555555] relative">
+                            <h5 class="font-bold text-2xl py-3">NO SCHEDULE</h5>
+                            <span>-</span>
+                            <div class="absolute bottom-4 right-4 text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#3E3E3E00] to-[#3E3E3E1A] opacity-100">OKT</div>
+                        </div>
+                        <div class="h-auto rounded-2xl bg-white shadow-lg p-6 flex flex-col items-start relative">
+                            <h5 class="font-bold text-2xl py-3">12 Feb 2025</h5>
+                            <span>Monthly Internal meeting with operational team</span>
+                            <div class="absolute bottom-4 right-4 text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#3E3E3E00] to-[#3E3E3E1A] opacity-100">NOV</div>
+                        </div>
+                        <div class="h-auto rounded-2xl bg-[#D9D9D9] shadow-lg p-6 flex flex-col items-start text-[#555555] relative">
+                            <h5 class="font-bold text-2xl py-3">NO SCHEDULE</h5>
+                            <span>-</span>
+                            <div class="absolute bottom-4 right-4 text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#3E3E3E00] to-[#3E3E3E1A] opacity-100">DES</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+    
 
     <!-- Footer -->
     <footer class="relative z-0">
@@ -700,35 +552,80 @@
     });
 </script>
 <script>
-    const container = document.getElementById('product-container');
-    const products = [ 
-        { img: '../public/assets/img/bg-C.png', letter: 'C', title: 'Customer Focus' },
-        { img: '../public/assets/img/bg-I.png', letter: 'I', title: 'Integrity & Honesty' },
-        { img: '../public/assets/img/bg-P.png', letter: 'P', title: 'Passion for Excellence' },
-        { img: '../public/assets/img/bg-A.png', letter: 'A', title: 'Accountability' },
-        { img: '../public/assets/img/bg-R.png', letter: 'R', title: 'Respect & Recognition' },
-        { img: '../public/assets/img/bg-S.png', letter: 'S', title: 'Social Responsibility' }
+    const container = document.getElementById('commissioners-container');
+    const commissioners = [
+        { img: '../public/assets/img/commisioner-1.png', position: 'President Commissioner', name: 'Tan Huiliang', description: 'Bertanggung jawab atas seluruh arah strategi perusahaan, serta memimpin Dewan Komisaris dalam menetapkan dan memantau kebijakan strategis perusahaan.' },
+        { img: '../public/assets/img/commisioner-2.png', position: 'Commissioner', name: 'Wang Xinguo', description: 'Anggota Dewan Komisaris yang memiliki peran dalam memberikan nasihat dan pandangan strategis kepada Direksi, serta memantau kinerja perusahaan secara umum.' },
+        { img: '../public/assets/img/commisioner-3.png', position: 'Commissioner', name: 'Hardi Sasmita', description: 'Anggota Dewan Komisaris dengan tanggung jawab untuk memantau operasi sehari-hari perusahaan dan memberikan rekomendasi kepada Direksi terkait strategi operasional.' },
+        { img: '../public/assets/img/commisioner-4.png', position: 'Independent Commissioner', name: 'Linda Lius', description: 'Anggota Dewan Komisaris yang tidak memiliki hubungan dengan perusahaan atau pihak terkait, bertujuan untuk memberikan pandangan yang objektif dan netral terhadap kebijakan dan operasi perusahaan.' },
+        { img: '../public/assets/img/commisioner-5.png', position: 'Independent Commissioner', name: 'Tjahyadi Lukiman', description: 'Memiliki tanggung jawab untuk menjaga kepentingan para pemegang saham serta memberikan penilaian independen terhadap tindakan Direksi dan Dewan Komisaris.' }
     ];
 
-    products.forEach(element => {
+    commissioners.forEach(element => {
         container.innerHTML += `
-            <div class="bg-white rounded-lg shadow-xl relative" 
-                @click="selectedCard = { 
-                    title: '${element.title}', 
-                    letter: '${element.letter}', 
-                    img: '${element.img}',  
-                }; openModal = true">
-                <!-- Background image -->
-                <div class="relative h-48 rounded-t-lg overflow-hidden">
-                    <img src="${element.img}" alt="Background" class="absolute inset-0 w-full h-full object-cover">
-                    <!-- Letter in the center -->
-                    <div class="absolute inset-0 flex items-center justify-center">
-                        <span class="text-white text-8xl font-bold">${element.letter}</span>
-                    </div>
+        <div class="relative flex flex-col items-center w-full max-w-xs"@click="selectedCard = { 
+                name: '${element.name}', 
+                position: '${element.position}', 
+                img: '${element.img}',
+                description: '${element.description}',
+            }; openModal = true">
+            <!-- Image -->
+            <div class="absolute z-10 -mt-4 h-48 w-56 overflow-hidden">
+                <img src="${element.img}" alt="Commissioner Image" class="w-[224px] h-[270px] object-cover !-mt-[0.3rem]">
+            </div>
+            <div class="bg-white rounded-lg shadow-xl relative flex flex-col justify-end w-full max-w-[18rem] overflow-hidden" style="height: 320px;">
+                <!-- Blue Background -->
+                <div class="bg-[#D7F2FF] h-44 w-full absolute top-0 z-0 rounded-t-lg"></div>
+                <!-- Content -->
+                <div class="relative z-20 px-6 py-8 text-left">
+                    <h2 class="text-base md:text-lg lg:!text-[24px] font-semibold leading-tight break-words">
+                        ${element.name.split(' ')[0]}<br>${element.name.split(' ')[1]}
+                    </h2>
+                    <p class="text-sm text-gray-600 mt-2">
+                        ${element.position}
+                    </p>
                 </div>
-                <!-- Content below the background -->
-                <h2 class="text-lg md:text-xl lg:text-2xl py-6 px-3 font-semibold text-left">${element.title}</h2>
-            </div>`;
+            </div>
+        </div>`;
+    });
+</script>
+<script>
+    const dirContainer = document.getElementById('directors-container');
+    const directors = [
+        { img: '../public/assets/img/director-1.png', position: 'President Director', name: 'Hua Shun', description: 'Bertanggung jawab atas seluruh arah strategi perusahaan, serta memimpin Dewan Komisaris dalam menetapkan dan memantau kebijakan strategis perusahaan.' },
+        { img: '../public/assets/img/director-2.png', position: 'Director', name: 'Ni Yongqiang', description: 'Anggota Dewan Komisaris yang memiliki peran dalam memberikan nasihat dan pandangan strategis kepada Direksi, serta memantau kinerja perusahaan secara umum.' },
+        { img: '../public/assets/img/director-3.png', position: 'Director', name: 'Dr. Rizal Nangoy', description: 'Anggota Dewan Komisaris dengan tanggung jawab untuk memantau operasi sehari-hari perusahaan dan memberikan rekomendasi kepada Direksi terkait strategi operasional.' },
+        { img: '../public/assets/img/director-4.png', position: 'Director', name: 'Yogiawan', description: 'Anggota Dewan Komisaris yang tidak memiliki hubungan dengan perusahaan atau pihak terkait, bertujuan untuk memberikan pandangan yang objektif dan netral terhadap kebijakan dan operasi perusahaan.' },
+        { img: '../public/assets/img/director-5.png', position: 'Director', name: 'Wu Hualu', description: 'Memiliki tanggung jawab untuk menjaga kepentingan para pemegang saham serta memberikan penilaian independen terhadap tindakan Direksi dan Dewan Komisaris.' },
+        { img: '../public/assets/img/director-6.png', position: 'Director', name: 'Ferry Suarly', description: 'Memiliki tanggung jawab untuk menjaga kepentingan para pemegang saham serta memberikan penilaian independen terhadap tindakan Direksi dan Dewan Komisaris.' }
+    ];
+
+    directors.forEach(element => {
+        dirContainer.innerHTML += `
+        <div class="relative flex flex-col items-center w-full max-w-xs"@click="selectedCard = { 
+                name: '${element.name}', 
+                position: '${element.position}', 
+                img: '${element.img}',
+                description: '${element.description}',
+            }; openModal = true">
+            <!-- Image -->
+            <div class="absolute z-10 -mt-4 h-48 w-56 overflow-hidden">
+                <img src="${element.img}" alt="Commissioner Image" class="w-[224px] h-[270px] object-cover !-mt-[0.3rem]">
+            </div>
+            <div class="bg-white rounded-lg shadow-xl relative flex flex-col justify-end w-full max-w-[18rem] overflow-hidden" style="height: 320px;">
+                <!-- Blue Background -->
+                <div class="bg-[#D7F2FF] h-44 w-full absolute top-0 z-0 rounded-t-lg"></div>
+                <!-- Content -->
+                <div class="relative z-20 px-6 py-8 text-left">
+                    <h2 class="text-base md:text-lg lg:!text-[24px] font-semibold leading-tight break-words">
+                        ${element.name.split(' ')[0]}<br>${element.name.split(' ')[1] ?? '' } ${element.name.split(' ')[2] ?? ''}
+                    </h2>
+                    <p class="text-sm text-gray-600 mt-2">
+                        ${element.position}
+                    </p>
+                </div>
+            </div>
+        </div>`;
     });
 </script>
 <!-- TW Elements JavaScript -->
